@@ -13,19 +13,33 @@ body {
     align-items: center;
     height: 831px;
 
+    padding-left: 57px;
+    padding-right: 57px;
+
     @include l_size {
         background-image: url('../images/header-background.jpg');
     }
     @include m_size {
-        
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/header-background-small.jpg);
         background-position: top center;
         background-size: cover;
         background-repeat: no-repeat;
     }
+    @include s_size {
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 488px;
+    }
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.header__logo {
+    width: auto;
+    @include s_size {
+        width: 133px;
+    }
 }
 
 .header__nav {
@@ -34,18 +48,27 @@ body {
     align-items: center;
 
     width: 100%;
+    margin-bottom: 119px;
     @include l_size {
         max-width: 1168px;
     }
     @include m_size {
         max-width: 910px;
     }
+    @include s_size {
+        margin-bottom: 52px;
+    }
     height: 88px;
-    margin-bottom: 119px;
+    
 
     font-weight: 400;
     font-size: 20px;
     line-height: 142%;
+    @include s_size {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 142%;
+    }
 }
 
 .header__list {
@@ -55,6 +78,9 @@ body {
     }
     @include m_size {
         gap: 30px;
+    }
+    @include s_size {
+        display: none;
     }
 }
 
@@ -69,6 +95,13 @@ body {
     font-weight: 700;
     font-size: 96px;
     line-height: 109%;
+
+    @include s_size {
+        width: 360px;
+        font-size: 34px;
+        line-height: 112%;
+        margin-bottom: 40px;
+    }
 
     text-align: center;
     letter-spacing: 0.02em;
@@ -86,6 +119,13 @@ body {
     font-weight: 400;
     font-size: 20px;
     line-height: 142%;
+    @include s_size {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 142%;
+        width: 310px;
+        margin-bottom: 40px;
+    }
     text-align: center;
 }
 
@@ -99,4 +139,8 @@ body {
     line-height: 142%;
     letter-spacing: -0.01em;
     color: #1B1F2B;
+
+    @include s_size {
+        font-size: 16px;
+    }
 }

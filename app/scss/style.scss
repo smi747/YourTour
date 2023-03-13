@@ -1,0 +1,77 @@
+@import 'reset';
+
+body {
+    font-family: 'Roboto';
+	font-style: normal;
+    color: white;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 831px;
+
+    background-image: url('../images/header-background.jpg');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1168px;
+    height: 88px;
+    margin-bottom: 119px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+}
+
+.header__list {
+    display: flex;
+    gap: 50px;
+}
+
+.header__link {
+    color: white;
+}
+
+.header__title {
+    width: 768px;
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 109%;
+
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.header__text {
+    width: 562px;
+    margin-bottom: 50px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+    text-align: center;
+}
+
+.header__button {
+    background-color: white;
+    padding: 5px 20px;
+    border-radius: 10px;
+
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 142%;
+    letter-spacing: -0.01em;
+    color: #1B1F2B;
+}

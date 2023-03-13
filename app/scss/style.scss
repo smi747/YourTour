@@ -1,4 +1,5 @@
 @import 'reset';
+@import 'media';
 
 body {
     font-family: 'Roboto';
@@ -12,7 +13,16 @@ body {
     align-items: center;
     height: 831px;
 
-    background-image: url('../images/header-background.jpg');
+    @include l_size {
+        background-image: url('../images/header-background.jpg');
+    }
+    @include m_size {
+        
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/header-background-small.jpg);
+        background-position: top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -24,7 +34,12 @@ body {
     align-items: center;
 
     width: 100%;
-    max-width: 1168px;
+    @include l_size {
+        max-width: 1168px;
+    }
+    @include m_size {
+        max-width: 910px;
+    }
     height: 88px;
     margin-bottom: 119px;
 
@@ -35,7 +50,12 @@ body {
 
 .header__list {
     display: flex;
-    gap: 50px;
+    @include l_size {
+        gap: 50px;
+    }
+    @include m_size {
+        gap: 30px;
+    }
 }
 
 .header__link {
@@ -55,7 +75,12 @@ body {
 }
 
 .header__text {
-    width: 562px;
+    @include l_size {
+        width: 562px;
+    }
+    @include m_size {
+        width: 442px;
+    }
     margin-bottom: 50px;
 
     font-weight: 400;

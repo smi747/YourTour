@@ -16,27 +16,27 @@ body {
     padding-left: 57px;
     padding-right: 57px;
 
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
     @include l_size {
         background-image: url('../images/header-background.jpg');
     }
     @include m_size {
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/header-background-small.jpg);
-        background-position: top center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/header-background-small.jpg);
     }
     @include s_size {
+        height: 488px;
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/header-background-small.jpg);
         padding-left: 20px;
         padding-right: 20px;
-        height: 488px;
     }
-    background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .header__logo {
     width: auto;
+
     @include s_size {
         width: 133px;
     }
@@ -48,7 +48,13 @@ body {
     align-items: center;
 
     width: 100%;
+    height: 88px;
     margin-bottom: 119px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+
     @include l_size {
         max-width: 1168px;
     }
@@ -57,17 +63,7 @@ body {
     }
     @include s_size {
         margin-bottom: 52px;
-    }
-    height: 88px;
-    
-
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 142%;
-    @include s_size {
-        font-weight: 400;
         font-size: 16px;
-        line-height: 142%;
     }
 }
 
@@ -95,42 +91,40 @@ body {
     font-weight: 700;
     font-size: 96px;
     line-height: 109%;
-
-    @include s_size {
-        width: 360px;
-        font-size: 34px;
-        line-height: 112%;
-        margin-bottom: 40px;
-    }
-
     text-align: center;
     letter-spacing: 0.02em;
+    
+    @include s_size {
+        width: 360px;
+        margin-bottom: 40px;
+        font-size: 34px;
+        line-height: 112%;
+    }
 }
 
 .header__text {
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+    text-align: center;
+
     @include l_size {
         width: 562px;
     }
     @include m_size {
         width: 442px;
     }
-    margin-bottom: 50px;
-
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 142%;
     @include s_size {
+        width: 310px;
+        margin-bottom: 40px;
         font-weight: 400;
         font-size: 16px;
         line-height: 142%;
-        width: 310px;
-        margin-bottom: 40px;
     }
-    text-align: center;
 }
 
 .header__button {
-    background-color: white;
     padding: 5px 20px;
     border-radius: 10px;
 
@@ -138,6 +132,7 @@ body {
     font-size: 17px;
     line-height: 142%;
     letter-spacing: -0.01em;
+    background-color: white;
     color: #1B1F2B;
 
     @include s_size {

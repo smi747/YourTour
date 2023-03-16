@@ -139,3 +139,93 @@ body {
         font-size: 16px;
     }
 }
+
+
+
+
+.tours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 135px;
+}
+
+.tours__title {
+    font-weight: 700;
+    font-size: 59px;
+    line-height: 124%;
+    text-align: center;
+    color: #1B1F2B;
+
+    margin-bottom: 35px;
+}
+
+.tours__menu {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 106px;
+}
+
+.places__link {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 122%;
+    color: #1B1F2B;
+}
+
+.tours__list {
+    width: 1170px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.tours__card {
+    width: 370px;
+    position: relative;
+}
+
+.tours__picture {
+    border-radius: 50px;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.tours__info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: absolute;
+	top	: 0;
+	left: 0;
+    width: 100%;
+    padding: 50px;
+}
+
+.tours__name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 122%;
+    color: #FFFFFF;
+}
+
+.tours__price {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 142%;
+    letter-spacing: -0.01em;
+    margin-top: 16px;
+}
+
+.tours__more {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 122%;
+    margin-top: auto;
+}

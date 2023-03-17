@@ -69,6 +69,7 @@ body {
 
 .header__list {
     display: flex;
+
     @include l_size {
         gap: 50px;
     }
@@ -141,30 +142,47 @@ body {
 }
 
 
-
-
 .tours {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     padding-top: 135px;
+
+    @include s_size {
+        padding: 0 21px;
+        padding-top: 75px;
+    }
 }
 
 .tours__title {
+    text-align: center;
+    font-style: normal;
+    color: #1B1F2B;
     font-weight: 700;
     font-size: 59px;
     line-height: 124%;
-    text-align: center;
-    color: #1B1F2B;
-
     margin-bottom: 35px;
+
+    @include s_size {
+        margin-bottom: 30px;
+        font-size: 34px;
+        line-height: 112%;
+        letter-spacing: 0.02em;
+    }
+
 }
 
 .tours__menu {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
     margin-bottom: 106px;
+    
+    @include s_size {
+        margin-bottom: 50px;
+        gap: 10px;
+    }
 }
 
 .places__link {
@@ -172,25 +190,76 @@ body {
     font-size: 23px;
     line-height: 122%;
     color: #1B1F2B;
+
+    @include s_size {
+        font-size: 16px;
+        line-height: 142%;
+    }
 }
 
 .tours__list {
-    width: 1170px;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    justify-content: center;
+
+    @include l_size {
+        width: 1170px;
+        gap: 30px;
+    }
+    @include m_size {
+        width: 918px;
+        gap: 18px;
+    }
+    @include s_size {
+        min-width: 318px;
+        gap: 18px;
+    }
 }
 
 .tours__card {
-    width: 370px;
     position: relative;
+    width: 370px;
+
+    @include m_size {
+        width: 450px;
+        height: 531px;
+    }
+    @include s_size {
+        width: 318px;
+        height: 318px;
+    }
+}
+
+.tours__pictureblock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+
+    border-radius: 50px;
+    @include s_size {
+        border-radius: 20px;
+    }
 }
 
 .tours__picture {
-    border-radius: 50px;
     width: 100%;
-    position: relative;
+}
+
+.tours__pictureblock::after {
+    content: '';
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
     background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
+    border-radius: 50px;
+
+    @include s_size {
+        border-radius: 20px;
+    }
 }
 
 .tours__info {
@@ -202,30 +271,51 @@ body {
 	top	: 0;
 	left: 0;
     width: 100%;
+    font-style: normal;
+    color: #FFFFFF;
+
     padding: 50px;
+    @include s_size {
+        padding: 25px;
+    }
 }
 
 .tours__name {
-    font-style: normal;
     font-weight: 500;
     font-size: 35px;
     line-height: 122%;
-    color: #FFFFFF;
+
+    @include s_size {
+        font-weight: 700;
+        font-size: 23px;
+        line-height: 120%;
+        letter-spacing: 0.04em;
+    }
 }
 
 .tours__price {
-    font-style: normal;
     font-weight: 400;
     font-size: 17px;
     line-height: 142%;
     letter-spacing: -0.01em;
     margin-top: 16px;
+
+    @include s_size {
+        font-size: 16px;
+        margin-top: 13px;
+    }
 }
 
 .tours__more {
-    font-style: normal;
+    display: flex;
+    gap: 16px;
     font-weight: 700;
     font-size: 23px;
     line-height: 122%;
     margin-top: auto;
+
+    @include s_size {
+        font-size: 16px;
+        line-height: 142%;
+    }
 }

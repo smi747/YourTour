@@ -385,6 +385,7 @@ body {
 .form__field_area {
     height: 152px;
     resize: none;
+    vertical-align:top;
 }
 
 .form__field::placeholder, .form__txtarea::placeholder {
@@ -392,4 +393,68 @@ body {
     font-weight: 400;
     font-size: 20px;
     line-height: 142%;
+}
+
+.form__radio {
+    display: flex;
+    gap: 31px;
+    
+    margin-top: 8px;
+}
+
+.form__radiocircle {
+    width: 26px;
+    height: 26px;
+    vertical-align:top;
+    margin: 0;
+    margin-right: 11px;
+}
+
+.form__agreed {
+    color: #A6A6A6;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 142%;
+    letter-spacing: -0.01em;
+}
+
+.form__checkbox {
+    width: 26px;
+    height: 26px;
+    vertical-align:top;
+    margin: 0;
+    margin-right: 19px;
+}
+
+.form__license {
+    color: #1B1F2B;
+}
+
+.form__inpsub {
+    display: flex;
+    gap: 30px;
+}
+
+.form__button {
+    padding: 15px 0;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+    border: none;
+    outline: none;
+}
+
+.form__button_heavy {
+    padding-right: 70.5px;
+    padding-left: 70.5px;
+    background-color: #286562;
+    color: #FFFFFF;
+}
+
+.form__button_light {
+    padding-right: 72.5px;
+    padding-left: 72.5px;
+    background-color: #E0F0E5;
+    color: #286562;
 }

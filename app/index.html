@@ -133,8 +133,21 @@
                 </div>
                 <div class="form__inpbig">
                     <label class="form__label" for="cmnt">Комментарий</label>
-                    <textarea class="form__field form__field_area" name="cmnt" id="cmnt">
-                    </textarea>
+                    <textarea class="form__field form__field_area" name="cmnt" id="cmnt"></textarea>
+                </div>
+                <div class="form__inpbig">
+                    <p class="form__label">Вам есть 18 лет?</p>
+                    <div class="form__radio">
+                        <p class="form__label"><input class="form__radiocircle" name="adult" type="radio" value="positive">Да</p>
+                        <p class="form__label"><input class="form__radiocircle" name="adult" type="radio" value="negative" checked>Нет</p>
+                    </div>
+                </div>
+                <div class="form__inpbig">
+                    <p class="form__agreed"><input class="form__checkbox" type="checkbox" id="license" name="license" value="agreed">Нажимая кнопку, я принимаю условия <a class="form__license" href="">Лицензионного договора</a></p>
+                </div>
+                <div class="form__inpsub">
+                    <button class="form__button form__button_heavy" type="submit">Найти тур</button>
+                    <button class="form__button form__button_light" type="reset">Сбросить</button>
                 </div>
             </form>
         </section>

@@ -324,6 +324,8 @@ body {
     flex-direction: column;
     align-items: center;
     padding-top: 135px;
+    padding-left: 53px;
+    padding-right: 53px;
 }
 
 .form__title {
@@ -346,13 +348,20 @@ body {
 }
 
 .form__inputs {
-    width: 1170px;
     display: grid;
     background-color: #FFFFFF;
     border-radius: 50px;
-    padding: 70px;
-    gap: 33px 30px;
     grid-template-columns: 1fr 1fr;
+    max-width: 1170px;
+
+    @include l_size {
+        gap: 33px 30px;
+        padding: 70px;
+    }
+    @include m_size {
+        gap: 33px 20px;
+        padding: 60px;
+    }
 }
 
 .form__inpbig {
@@ -423,7 +432,13 @@ body {
     height: 26px;
     vertical-align:top;
     margin: 0;
-    margin-right: 19px;
+    
+    @include l_size {
+        margin-right: 19px;
+    }
+    @include m_size {
+        margin-right: 11px;
+    }
 }
 
 .form__license {
@@ -431,6 +446,8 @@ body {
 }
 
 .form__inpsub {
+    grid-column-start: 1;
+    grid-column-end: 3;
     display: flex;
     gap: 30px;
 }

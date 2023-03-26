@@ -6,6 +6,7 @@ body {
 	font-style: normal;
     color: white;
     background-color: #F9F7F4;
+    min-width: 360px;
 }
 
 .header {
@@ -404,6 +405,10 @@ body {
     }
 }
 
+.form__agreedwrap {
+    display: flex;
+}
+
 .form__label {
     color: #1B1F2B;
     font-weight: 400;
@@ -513,6 +518,7 @@ body {
 .form__checkbox {
     width: 26px;
     height: 26px;
+    flex-shrink: 0;
     vertical-align:top;
     margin: 0;
     

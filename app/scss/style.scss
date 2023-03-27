@@ -747,9 +747,9 @@ body {
 
 .photos__list {
     display: grid;
+
     gap: 30px;
     margin-bottom: 30px;
-
     max-width: 1860px;
 
     @include m_size {
@@ -760,11 +760,17 @@ body {
         margin-bottom: 18px;
         max-width: 318px;
     }
-    
+}
+
+.photos__list_gap {
+    @include s_size {
+        gap: 18px;
+    }
 }
 
 .photos__list_small {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+
     @include m_size {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -775,6 +781,7 @@ body {
 
 .photos__list_big {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
     @include m_size {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
@@ -787,9 +794,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50px;
-    height: 301px;
     overflow: hidden;
+
+    height: 301px;
+    border-radius: 50px;
 
     @include s_size {
         height: 110px;
@@ -800,7 +808,6 @@ body {
 .photos__card img {
     height: 100%;
     object-fit: cover;
-
 }
 
 .photos__card_hidden-m {

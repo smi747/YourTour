@@ -9,6 +9,11 @@ body {
     min-width: 360px;
 }
 
+/*Убрать полосу прокрутки для всей страницы*/
+::-webkit-scrollbar {
+    width: 0;
+}
+
 .header {
     display: flex;
     flex-direction: column;
@@ -335,7 +340,7 @@ body {
     }
 }
 
-.form__title {
+.title {
     margin-bottom: 30px;
     color: #1B1F2B;
     font-weight: 700;
@@ -715,4 +720,107 @@ body {
 
 .feedback__picture {
     border-radius: 100px;
+}
+
+
+.photos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding-top: 135px;
+    
+    padding-left: 29px;
+    padding-right: 29px;
+    
+    @include m_size {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    @include s_size {
+        padding-top: 75px;
+        padding-left: 21px;
+        padding-right: 21px;
+    }
+}
+
+.photos__list {
+    display: grid;
+
+    gap: 30px;
+    margin-bottom: 30px;
+    max-width: 1860px;
+
+    @include m_size {
+        gap: 20px;
+    }
+    @include s_size {
+        gap: 10px;
+        margin-bottom: 18px;
+        max-width: 318px;
+    }
+}
+
+.photos__list_gap {
+    @include s_size {
+        gap: 18px;
+    }
+}
+
+.photos__list_small {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    @include m_size {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    @include s_size {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.photos__list_big {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    @include m_size {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    @include s_size {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.photos__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    height: 301px;
+    border-radius: 50px;
+
+    @include s_size {
+        height: 110px;
+        border-radius: 20px;
+    }
+}
+
+.photos__card img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.photos__card_hidden-m {
+    @include m_size {
+        display: none;
+    }
+    @include s_size {
+        display: none;
+    }
+}
+
+.photos__card_hidden-s {
+    @include s_size {
+        display: none;
+    }
 }

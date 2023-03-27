@@ -369,6 +369,7 @@ body {
     @include s_size {
         width: 318px;
         font-size: 16px;
+        margin-bottom: 50px;
     }
 }
 
@@ -636,12 +637,6 @@ body {
         flex-wrap: wrap;
         gap: 18px;
         justify-content: center;
-    }
-}
-
-.desc_feedback {
-    @include s_size {
-        margin-bottom: 50px;
     }
 }
 

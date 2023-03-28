@@ -965,6 +965,33 @@ body {
     }
 }
 
+.stories__ul {
+    list-style-type: disc !important;
+    list-style-position: inside !important;
+    margin-top: -3px;
+    margin-left: 14px;
+    line-height: 128%;
+
+    @include s_size {
+        margin-top: 0;
+        margin-left: 9px;
+        line-height: 142%;
+    }
+}
+
+.stories__li {
+    position: relative;
+}
+
+.stories__li-p {
+    position: absolute;
+    top: 3px;
+    left: 16px;
+}
+
+.stories__li::marker {
+    font-size: 0.7em;
+  }
 
 .stories__name {
     font-weight: 500;
@@ -972,6 +999,7 @@ body {
     line-height: 122%;
 
     @include s_size {
+        width: 140px;
         font-weight: 700;
         font-size: 23px;
         line-height: 120%;
@@ -979,8 +1007,22 @@ body {
     }
 }
 
+.stories__arrow {
+    width: 22px;
+}
+
 .stories__socials {
+    display: flex;
+    gap: 35px;
+    
     @include s_size {
         display: none;
     }
+}
+
+.stories__link {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+    color: #FFFFFF;
 }

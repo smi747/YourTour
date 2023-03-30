@@ -39,6 +39,26 @@ body {
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    transition: top 1s;
+}
+
+.header__space {
+    display: none;
+    height: 88px;
+    margin-bottom: 119px;
+
+    @include s_size {
+        margin-bottom: 52px;
+    }
+}
+
+.header__navbackgr {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top:-88px;
+    transition: top 1s;
 }
 
 .header__logo {
@@ -73,6 +93,36 @@ body {
         font-size: 16px;
     }
 }
+
+//Скрыытое меню
+.header__navbackgr.show {
+    width:100%;
+    position: fixed;
+    top: 0;
+    background: rgba(243, 239, 232, 0.6);
+    backdrop-filter: blur(27px);
+    z-index: 100;
+    
+}
+
+.header__navbackgr.show .header__nav {
+    margin-bottom: 0;
+    color: #1B1F2B;
+
+    @include s_size {
+        padding: 0 20px;
+    }
+}
+
+.header__navbackgr.show .header__link {
+    color: #1B1F2B;
+}
+
+.header__navbackgr.show .header__logo {
+    filter: invert(1);
+}
+//-------------------
+
 
 .header__list {
     display: flex;

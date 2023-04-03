@@ -519,6 +519,8 @@ body {
 }
 
 .form__label {
+    display: flex;
+
     color: #1B1F2B;
     font-weight: 400;
     font-size: 20px;
@@ -624,6 +626,52 @@ body {
         height: 20px;
     }
 }
+
+//custom radio
+.form__radiocircle {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.form__radiocircle+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+
+     margin-right: 11px;
+
+    @include s_size {
+        margin-right: 10px;
+    }
+}
+
+.form__radiocircle+label::before {
+    content: '';
+    width: 26px;
+    height: 26px;
+    background-image: url("../images/radio.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @include s_size {
+        width: 20px;
+        height: 20px;
+        background-size: 20px 20px;
+    }
+}
+
+.form__radiocircle:checked+label::before {
+    background-size: 26px 26px, auto;
+    background-position: center center, center center;
+    background-image: url("../images/radio.svg"), url("../images/circle.svg");
+    
+    @include s_size {
+        background-image: url("../images/radio.svg"), url("../images/circle.svg");
+        background-size: 20px 20px, 9.23px 9.23px;       
+    }
+}
+//----------------------------------------------------------
 
 .form__agreed {
     color: #A6A6A6;

@@ -664,6 +664,56 @@ body {
     }
 }
 
+
+
+//custom checkbox
+.form__checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.form__checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    margin-right: 19px;
+
+    @include m_size {
+        margin-right: 11px;
+    }
+    @include s_size {
+        margin-right: 10px;
+    }
+}
+
+.form__checkbox+label::before {
+    content: '';
+    width: 26px;
+    height: 26px;
+    background-image: url("../images/checkbox.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @include s_size {
+        width: 20px;
+        height: 20px;
+        background-size: 20px 20px;
+    }
+}
+
+.form__checkbox:checked+label::before {
+    background-size: 26px 26px, auto;
+    background-position: center center, center center;
+    background-image: url("../images/checkbox.svg"), url("../images/checked.svg");
+    
+    @include s_size {
+        background-image: url("../images/checkbox.svg"), url("../images/checked_small.svg");
+        background-size: 20px 20px, auto;       
+    }
+}
+//----------------------------------------------------------
+
 .form__license {
     color: #1B1F2B;
 }

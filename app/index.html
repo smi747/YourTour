@@ -37,8 +37,8 @@
                 <li class="tours__select"><a href="" class="places__link">Сплавы</a></li>
                 <li class="tours__select"><a href="" class="places__link">Велопрогулки</a></li>
             </ul>
-            <ul class="tours__list">
-                <li class="tours__card">
+            <div class="tours__list">
+                <a href="" class="tours__card">
                     <div class="tours__pictureblock"><img src='../images/tour-photo-1.jpg' class="tours__picture"></div>
                     <div class="tours__info">
                         <div class="tours__name">Путешествие в горы</div>
@@ -48,8 +48,8 @@
                             <img src="../images/arrow.svg" class="tours__arrow">
                         </div>
                     </div>
-                </li>
-                <li class="tours__card">
+                </a>
+                <a href="" class="tours__card">
                     <div class="tours__pictureblock"><img src='../images/tour-photo-2.jpg' class="tours__picture"></div>
                     <div class="tours__info">
                         <div class="tours__name">Путешествие в горы</div>
@@ -59,8 +59,8 @@
                             <img src="../images/arrow.svg" class="tours__arrow">
                         </div>
                     </div>
-                </li>
-                <li class="tours__card">
+                </a>
+                <a href="" class="tours__card">
                     <div class="tours__pictureblock"><img src='../images/tour-photo-3.jpg' class="tours__picture"></div>
                     <div class="tours__info">
                         <div class="tours__name">Путешествие в горы</div>
@@ -70,8 +70,8 @@
                             <img src="../images/arrow.svg" class="tours__arrow">
                         </div>
                     </div>
-                </li>
-                <li class="tours__card">
+                </a>
+                <a href="" class="tours__card">
                     <div class="tours__pictureblock"><img src='../images/tour-photo-4.jpg' class="tours__picture"></div>
                     <div class="tours__info">
                         <div class="tours__name">Путешествие в горы</div>
@@ -81,8 +81,8 @@
                             <img src="../images/arrow.svg" class="tours__arrow">
                         </div>
                     </div>
-                </li>
-                <li class="tours__card">
+                </a>
+                <a href="" class="tours__card">
                     <div class="tours__pictureblock"><img src='../images/tour-photo-5.jpg' class="tours__picture"></div>
                     <div class="tours__info">
                         <div class="tours__name">Путешествие в горы</div>
@@ -92,8 +92,8 @@
                             <img src="../images/arrow.svg" class="tours__arrow">
                         </div>
                     </div>
-                </li>
-                <li class="tours__card">
+                </a>
+                <a href="" class="tours__card">
                     <div class="tours__pictureblock"><img src='../images/tour-photo-6.jpg' class="tours__picture"></div>
                     <div class="tours__info">
                         <div class="tours__name">Путешествие в горы</div>
@@ -103,8 +103,8 @@
                             <img src="../images/arrow.svg" class="tours__arrow">
                         </div>
                     </div>
-                </li>
-            </ul>
+                </a>
+            </div>
         </section>
         <section class="form">
             <h2 class="title">Собери свой тур</h2>
@@ -116,7 +116,12 @@
                 </div>
                 <div class="form__inp">
                     <label class="form__label" for="direction">Направление</label>
-                    <input class="form__field form__field_where" name="direction" id="direction" type="text" placeholder="Куда хотите ехать">
+                    <select onchange="changeColor(0);" class="form__field form__field_where" name="direction" id="direction" type="text" placeholder="Куда хотите ехать">
+                        <option value="def" selected disabled value>Куда хотите ехать</option>
+                        <option class="form__option">Тверь</option>
+                        <option class="form__option">Москва</option>
+                        <option class="form__option">Санкт-Петербург</option>
+                    </select>
                 </div>
                 <div class="form__inp">
                     <label class="form__label" for="email">Email</label>
@@ -141,16 +146,17 @@
                 <div class="form__inpbig">
                     <p class="form__label">Вам есть 18 лет?</p>
                     <div class="form__radio">
-                        <div class="form__label"><input class="form__radiocircle" name="adult" type="radio" value="positive">Да</div>
-                        <div class="form__label"><input class="form__radiocircle" name="adult" type="radio" value="negative" checked>Нет</div>
+                        <div class="form__label"><input class="form__radiocircle" name="adult" type="radio" value="positive" id="circle_1"><label for="circle_1"></label>Да</div>
+                        <div class="form__label"><input class="form__radiocircle" name="adult" type="radio" value="negative" id="circle_2" checked><label for="circle_2"></label>Нет</div>
                     </div>
                 </div>
                 <div class="form__inpbig">
-                    <div class="form__agreedwrap"><input class="form__checkbox" type="checkbox" id="license" name="license" value="agreed"><div class="form__agreed">Нажимая кнопку, я принимаю условия <a class="form__license" href="">Лицензионного договора</a></div></div>
+                    <div class="form__agreedwrap"><input class="form__checkbox" type="checkbox" id="license" name="license" value="agreed"><label for="license"></label><div class="form__agreed">Нажимая кнопку, я принимаю условия <a class="form__license" href="">Лицензионного договора</a></div></div>
+                    
                 </div>
                 <div class="form__inpsub">
                     <button class="form__button form__button_heavy" type="submit">Найти тур</button>
-                    <button class="form__button form__button_light" type="reset">Сбросить</button>
+                    <button class="form__button form__button_light" type="reset" onclick="changeColor(1);">Сбросить</button>
                 </div>
             </form>
         </section>
@@ -222,10 +228,10 @@
                         </div>
 
                         <footer class="stories__cardfooter">
-                            <div class="stories__more">
+                            <a href=""  class="stories__more">
                                 <p>Подробнее</p>
                                 <img src="../images/arrow.svg" class="stories__arrow">
-                            </div>
+                            </a>
                             <div class="stories__socials">
                                 <a href="" class="stories__link">instagram</a>
                                 <a href="" class="stories__link">facebook</a>
@@ -240,10 +246,10 @@
                         <div class="stories__name">Автостопом в Стамбул</div>
                         <div class="stories__desc">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.</div>
                         <footer class="stories__cardfooter">
-                            <div class="stories__more">
+                            <a href=""  class="stories__more">
                                 <p>Подробнее</p>
                                 <img src="../images/arrow.svg" class="stories__arrow">
-                            </div>
+                            </a>
                             <div class="stories__socials">
                                 <a href="" class="stories__link">instagram</a>
                                 <a href="" class="stories__link">ВКонтакте</a>
@@ -257,10 +263,10 @@
                         <div class="stories__name">Автостопом в Стамбул</div>
                         <div class="stories__desc">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.</div>
                         <footer class="stories__cardfooter">
-                            <div class="stories__more">
+                            <a href="" class="stories__more">
                                 <p>Подробнее</p>
                                 <img src="../images/arrow.svg" class="stories__arrow">
-                            </div>
+                            </a>
                             <div class="stories__socials">
                                 <a href="" class="stories__link">instagram</a>
                                 <a href="" class="stories__link">facebook</a>
@@ -269,6 +275,7 @@
                         </footer>
                     </div>
                 </li>
+            </ul>
         </section>
         <section class="ending">
             <div class="ending__pictureblock"><img class="ending__picture" src="../images/ending-photo.jpg" alt=""></div>
@@ -283,15 +290,15 @@
                 <div class="footer__socialist">
                     <div class="footer__social">
                         <img src="../images/insta_logo.svg" alt="" class="footer__socialico footer__socialico_inst">
-                        <p class="footer__socialname">instagram</p>
+                        <a href="" class="footer__socialname">instagram</a>
                     </div>
                     <div class="footer__social footer__social_fb">
                         <img src="../images/facebook_logo.svg" alt="" class="footer__socialico footer__socialico_fb">
-                        <p class="footer__socialname">facebook</p>
+                        <a href="" class="footer__socialname">facebook</a>
                     </div>
                     <div class="footer__social">
                         <img src="../images/vk_logo.svg" alt="" class="footer__socialico footer__socialico_vk">
-                        <p class="footer__socialname">vkontakte</p>
+                        <a href="" class="footer__socialname">vkontakte</a>
                     </div>
                 </div>
             </div>

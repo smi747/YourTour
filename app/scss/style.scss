@@ -668,6 +668,16 @@ body {
     color: #1B1F2B;
 }
 
+.form__license:hover {
+    text-decoration-line: underline;
+    color: #1B1F2B;
+}
+
+.form__license:active {
+    text-decoration-line: underline;
+    color: #286562;
+}
+
 .form__inpsub {
     @include l_size {
         grid-column-start: 1;

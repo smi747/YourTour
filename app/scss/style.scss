@@ -257,6 +257,17 @@ body {
     }
 }
 
+.places__link:hover {
+    text-decoration: underline 1px;
+    text-underline-offset: 6px;
+}
+
+.places__link_selected {
+    text-decoration: underline 1px;
+    text-underline-offset: 6px;
+    color: #EFA501;
+}
+
 .tours__list {
     display: flex;
     flex-wrap: wrap;
@@ -289,6 +300,9 @@ body {
         height: 318px;
     }
 }
+.tours__card:hover .tours__picture {
+    transform: scale(1.2);
+}
 
 .tours__pictureblock {
     display: flex;
@@ -306,6 +320,7 @@ body {
 }
 
 .tours__picture {
+    transition: all .3s ease;
     width: 100%;
 }
 
@@ -320,6 +335,7 @@ body {
     @include s_size {
         border-radius: 20px;
     }
+    pointer-events : none;
 }
 
 .tours__info {
@@ -372,11 +388,20 @@ body {
     font-size: 23px;
     line-height: 122%;
     margin-top: auto;
+    align-self: flex-start;
 
     @include s_size {
         font-size: 16px;
         line-height: 142%;
     }
+}
+
+.tours__card:hover .tours__more {
+    background-color: #286562;
+    border-radius: 50px;
+    padding: 7px 20px;
+    margin-left: -20px;
+    margin-bottom: -7px;
 }
 
 

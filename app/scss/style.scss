@@ -262,7 +262,7 @@ body {
     text-underline-offset: 6px;
 }
 
-.places__link_selected {
+.places__link:active {
     text-decoration: underline 1px;
     text-underline-offset: 6px;
     color: #EFA501;
@@ -948,6 +948,7 @@ body {
 }
 
 .stories__card {
+    display: block;
     position: relative;
     width: 1170px;
     
@@ -978,7 +979,12 @@ body {
 
 .stories__picture {
     height: 100%;
+    transition: all .3s ease;
     object-fit: cover;
+}
+
+.stories__card:hover .stories__picture {
+    transform: scale(1.2);
 }
 
 .stories__pictureblock::after {
@@ -1029,6 +1035,7 @@ body {
 .stories__cardfooter {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     margin-top: auto;
 }
 
@@ -1038,11 +1045,20 @@ body {
     font-weight: 700;
     font-size: 23px;
     line-height: 122%;
+    color: #FFFFFF;
 
     @include s_size {
         font-size: 16px;
         line-height: 142%;
     }
+}
+
+.stories__more:hover {
+    background-color: #286562;
+    border-radius: 50px;
+    padding: 7px 20px;
+    margin-left: -20px;
+    margin-bottom: -7px;
 }
 
 .stories__ul {
@@ -1105,6 +1121,11 @@ body {
     font-size: 20px;
     line-height: 142%;
     color: #FFFFFF;
+}
+
+.stories__link:hover {
+    text-decoration: underline 1px;
+    text-underline-offset: 6px;
 }
 
 

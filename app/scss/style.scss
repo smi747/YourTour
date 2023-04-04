@@ -94,7 +94,7 @@ body {
     }
 }
 
-//Скрыытое меню
+//Скрытое меню
 .header__navbackgr.show {
     width:100%;
     position: fixed;
@@ -1111,10 +1111,10 @@ body {
     display: block;
     position: relative;
     width: 1170px;
+    height: 567px;
     
     @include m_size {
         width: 918px;
-        height: 567px;
     }
     @include s_size {
         width: 318px;

@@ -214,6 +214,7 @@ body {
 .header__button:hover {
     background-color: #EFA501;
     color: #FFFFFF;
+    transition: all .3s ease;
 }
 
 .header__button:active {
@@ -425,6 +426,7 @@ body {
     padding: 7px 20px;
     margin-left: -20px;
     margin-bottom: -7px;
+    transition: background-color .3s ease;
 }
 
 .tours__card:active .tours__more {
@@ -1226,6 +1228,8 @@ body {
         font-size: 16px;
         line-height: 142%;
     }
+
+    
 }
 
 .stories__pictureblock:hover~.stories__info .stories__more {
@@ -1234,6 +1238,7 @@ body {
     padding: 7px 20px;
     margin-left: -20px;
     margin-bottom: -7px;
+    transition: background-color .3s ease;
 }
 
 .stories__pictureblock:active~.stories__info .stories__more {

@@ -121,6 +121,10 @@ body {
 .header__navbackgr.show .header__logo {
     filter: invert(1);
 }
+
+.header__navbackgr.show .header__phone {
+    color: #1b1f2b;
+}
 //-------------------
 
 
@@ -145,6 +149,10 @@ body {
 .header__link:hover {
     text-decoration: underline 1px;
     text-underline-offset: 6px;
+}
+
+.header__phone {
+    color: white;
 }
 
 .header__title {
@@ -272,6 +280,12 @@ body {
 }
 
 .places__link:active {
+    text-decoration: underline 1px;
+    text-underline-offset: 6px;
+    color: #EFA501;
+}
+
+.places__link_active {
     text-decoration: underline 1px;
     text-underline-offset: 6px;
     color: #EFA501;

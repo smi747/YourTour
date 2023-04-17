@@ -122,6 +122,10 @@ body {
     color: #1B1F2B;
 }
 
+.header__navbackgr.show .header__link:hover {
+    text-decoration-color: currentColor;
+}
+
 .header__navbackgr.show .header__logo {
     filter: invert(1);
 }
@@ -147,12 +151,15 @@ body {
 }
 
 .header__link {
+    text-decoration: underline 1px;
+    text-underline-offset: 6px;
+    text-decoration-color: transparent;
     color: white;
 }
 
 .header__link:hover {
-    text-decoration: underline 1px;
-    text-underline-offset: 6px;
+    text-decoration-color: currentColor;
+    transition: all 0.3s ease-out;
 }
 
 .header__phone {
@@ -273,6 +280,10 @@ body {
     line-height: 122%;
     color: #1B1F2B;
 
+    text-decoration: underline 1px;
+    text-underline-offset: 6px;
+    text-decoration-color: transparent;
+
     @include s_size {
         font-size: 16px;
         line-height: 142%;
@@ -280,13 +291,13 @@ body {
 }
 
 .places__link:hover {
-    text-decoration: underline 1px;
-    text-underline-offset: 6px;
+    text-decoration-color: currentColor;
+    transition: all 0.3s ease-out;
 }
 
 .places__link:active {
-    text-decoration: underline 1px;
-    text-underline-offset: 6px;
+    text-decoration-color: currentColor;
+    transition: all 0.3s ease-out;
     color: #EFA501;
 }
 
@@ -783,17 +794,21 @@ body {
 //----------------------------------------------------------
 
 .form__license {
+    text-decoration: underline 1px;
+    text-decoration-color: transparent;
     color: #1B1F2B;
 }
 
 .form__license:hover {
-    text-decoration-line: underline;
+    text-decoration-color: currentColor;
     color: #1B1F2B;
+    transition: all 0.3s ease-out;
 }
 
 .form__license:active {
-    text-decoration-line: underline;
     color: #286562;
+    text-decoration-color: currentColor;
+    transition: all 0.3s ease-out;
 }
 
 .form__inpsub {
@@ -1310,6 +1325,9 @@ body {
 }
 
 .stories__link {
+    text-decoration: underline 1px;
+    text-underline-offset: 6px;
+    text-decoration-color: transparent;
     font-weight: 400;
     font-size: 20px;
     line-height: 142%;
@@ -1317,14 +1335,14 @@ body {
 }
 
 .stories__link:hover {
-    text-decoration: underline 1px;
-    text-underline-offset: 6px;
+    text-decoration-color: currentColor;
+    transition: all 0.3s ease-out;
 }
 
 .stories__link:active {
-    text-decoration: underline 1px;
-    text-underline-offset: 6px;
     color: #EFA501;
+    text-decoration-color: currentColor;
+    transition: all 0.3s ease-out;
 }
 
 
@@ -1412,15 +1430,20 @@ body {
 }
 
 .ending__mail {
+    text-decoration: underline 1px;
+    text-decoration-color: transparent;
     color: black;
 }
 
 .ending__mail:hover {
-    text-decoration: underline 1px;
+    transition: all 0.3s ease-out;
+    text-decoration-color: currentColor;
 }
 
 .ending__mail:active {
     color: #286562;
+    transition: all 0.3s ease-out;
+    text-decoration-color: currentColor;
 }
 
 
@@ -1526,12 +1549,16 @@ body {
     font-size: 20px;
     line-height: 142%;
 
+    text-decoration: underline 1px;
+    text-underline-offset: 6px;
+    text-decoration-color: transparent;
+
     @include s_size {
         font-size: 16px;
     }
 }
 
 .footer__socialname:hover {
-    text-decoration: underline 1px;
-    text-underline-offset: 6px;
+    transition: all 0.3s ease-out;
+    text-decoration-color: currentColor;
 }

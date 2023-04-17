@@ -1,6 +1,10 @@
 @import 'reset';
 @import 'media';
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto';
 	font-style: normal;

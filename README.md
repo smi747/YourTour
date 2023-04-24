@@ -1,4 +1,4 @@
-#YourTour training project for SnP
+# YourTour training project for SnP
 
 You can find full commit story at https://github.com/smi747/YourTour
 

@@ -534,6 +534,10 @@ body {
     }
 }
 
+#direction:has(.form__option:checked) {
+    color: #1b1f2b;
+}
+
 .form__inpbig {
     @include l_size {
         grid-column-start: 1;

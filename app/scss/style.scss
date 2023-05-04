@@ -107,31 +107,26 @@ body {
     backdrop-filter: blur(27px);
     z-index: 100;
     
-}
+    .header__nav {
+        margin-bottom: 0;
+        color: #1B1F2B;
 
-.header__navbackgr.show .header__nav {
-    margin-bottom: 0;
-    color: #1B1F2B;
-
-    @include s_size {
-        padding: 0 20px;
+        @include s_size {
+            padding: 0 20px;
+        }
     }
-}
-
-.header__navbackgr.show .header__link {
-    color: #1B1F2B;
-}
-
-.header__navbackgr.show .header__link:hover {
-    text-decoration-color: currentColor;
-}
-
-.header__navbackgr.show .header__logo {
-    filter: invert(1);
-}
-
-.header__navbackgr.show .header__phone {
-    color: #1b1f2b;
+    .header__link {
+        color: #1B1F2B;
+    }
+    .header__link:hover {
+        text-decoration-color: currentColor;
+    }
+    .header__logo {
+        filter: invert(1);
+    }
+    .header__phone {
+        color: #1b1f2b;
+    }
 }
 //-------------------
 

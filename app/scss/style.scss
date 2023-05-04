@@ -32,14 +32,14 @@ body {
     background-repeat: no-repeat;
 
     @include l_size {
-        background-image: url('../images/header-background.jpg');
+        background-image: url('../images/header_section/header-background.jpg');
     }
     @include m_size {
-        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/header-background-small.jpg);
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/header_section/header-background-small.jpg);
     }
     @include s_size {
         height: 488px;
-        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/header-background-small.jpg);
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/header_section/header-background-small.jpg);
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -596,7 +596,7 @@ body {
 .form__field_where {
     color: #A6A6A6;
     appearance: none;
-    background-image: url("../images/arrow.png");
+    background-image: url("../images/svg_elements/arrow_down.svg");
     background-repeat: no-repeat;
     background-position: right 24px top 50%;
 
@@ -681,7 +681,7 @@ body {
     content: '';
     width: 26px;
     height: 26px;
-    background-image: url("../images/radio.svg");
+    background-image: url("../images/svg_elements/radio.svg");
     background-repeat: no-repeat;
     background-position: center center;
 
@@ -695,10 +695,10 @@ body {
 .form__radiocircle:checked+label::before {
     background-size: 26px 26px, auto;
     background-position: center center, center center;
-    background-image: url("../images/radio.svg"), url("../images/circle.svg");
+    background-image: url("../images/svg_elements/radio.svg"), url("../images/svg_elements/circle.svg");
     
     @include s_size {
-        background-image: url("../images/radio.svg"), url("../images/circle.svg");
+        background-image: url("../images/svg_elements/radio.svg"), url("../images/svg_elements/circle.svg");
         background-size: 20px 20px, 9.23px 9.23px;       
     }
 }
@@ -770,7 +770,7 @@ body {
     content: '';
     width: 26px;
     height: 26px;
-    background-image: url("../images/checkbox.svg");
+    background-image: url("../images/svg_elements/checkbox.svg");
     background-repeat: no-repeat;
     background-position: center center;
 
@@ -784,10 +784,10 @@ body {
 .form__checkbox:checked+label::before {
     background-size: 26px 26px, auto;
     background-position: center center, center center;
-    background-image: url("../images/checkbox.svg"), url("../images/checked.svg");
+    background-image: url("../images/svg_elements/checkbox.svg"), url("../images/svg_elements/checked.svg");
     
     @include s_size {
-        background-image: url("../images/checkbox.svg"), url("../images/checked_small.svg");
+        background-image: url("../images/svg_elements/checkbox.svg"), url("../images/svg_elements/checked_small.svg");
         background-size: 20px 20px, auto;       
     }
 }

@@ -57,7 +57,7 @@ body {
     }
 }
 
-.header__navbackgr {
+.header__top {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -99,7 +99,7 @@ body {
 }
 
 //Скрытое меню
-.header__navbackgr.show {
+.header__top.show {
     width:100%;
     position: fixed;
     top: 0;

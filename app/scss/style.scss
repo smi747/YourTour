@@ -1447,7 +1447,7 @@ img {
     }
 }
 
-.footer__socialist {
+.footer__social {
     display: flex;
     gap: 25px;
 
@@ -1456,7 +1456,7 @@ img {
     }
 }
 
-.footer__social {
+.footer__social-elem {
     display: flex;
     align-items: baseline;
     gap: 12px;
@@ -1474,7 +1474,7 @@ img {
     }
 }
 
-.footer__socialico {
+.footer__social-ico {
     &_vk {
         margin-left: 4px;
         width: 20px;
@@ -1507,7 +1507,7 @@ img {
     }
 }
 
-.footer__socialname {
+.footer__social-name {
     color: black;
     font-weight: 400;
     font-size: 20px;

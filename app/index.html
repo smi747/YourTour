@@ -114,8 +114,8 @@
             <p class="desc desc_form">Идейные соображения высшего порядка,<br>a также рамки и место обучения кадров</p>
             <form class="form__inputs">
                 <div class="form__inputs-elem">
-                    <label class="form__label" for="name">Имя</label>
-                    <input class="form__field" name="name" id="name" type="text" placeholder="Введите Ваше имя">
+                    <label class="form__label" for="user_name">Имя</label>
+                    <input class="form__field" name="user_name" id="user_name" type="text" placeholder="Введите Ваше имя">
                 </div>
                 <div class="form__inputs-elem">
                     <label class="form__label" for="direction">Направление</label>
@@ -143,19 +143,18 @@
                     <input class="form__field" name="dateto" id="dateto" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="ДД.ММ.ГГГГ">
                 </div>
                 <div class="form__inputs-elem-big">
-                    <label class="form__label" for="cmnt">Комментарий</label>
-                    <textarea class="form__field form__field_area" name="cmnt" id="cmnt"></textarea>
+                    <label class="form__label" for="comment">Комментарий</label>
+                    <textarea class="form__field form__field_area" name="comment" id="comment"></textarea>
                 </div>
                 <div class="form__inputs-elem-big">
                     <p class="form__label">Вам есть 18 лет?</p>
                     <div class="form__radio">
-                        <div class="form__label"><input class="form__radiocircle" name="adult" type="radio" value="positive" id="circle_1"><label for="circle_1"></label>Да</div>
-                        <div class="form__label"><input class="form__radiocircle" name="adult" type="radio" value="negative" id="circle_2" checked><label for="circle_2"></label>Нет</div>
+                        <div class="form__label"><input class="form__radiocircle" name="is_adult" type="radio" value="positive" id="circle_1"><label for="circle_1"></label>Да</div>
+                        <div class="form__label"><input class="form__radiocircle" name="is_adult" type="radio" value="negative" id="circle_2" checked><label for="circle_2"></label>Нет</div>
                     </div>
                 </div>
                 <div class="form__inputs-elem-big">
                     <div class="form__agreedwrap"><input class="form__checkbox" type="checkbox" id="license" name="license" value="agreed"><label for="license"></label><div class="form__agreed">Нажимая кнопку, я принимаю условия <a class="form__license" href="">Лицензионного договора</a></div></div>
-                    
                 </div>
                 <div class="form__submit-section">
                     <button class="form__button form__button_heavy" type="submit">Найти тур</button>

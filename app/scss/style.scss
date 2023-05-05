@@ -533,7 +533,7 @@ body {
     color: #1b1f2b;
 }
 
-.form__inpbig {
+.form__inputs-elem-big {
     @include l_size {
         grid-column-start: 1;
         grid-column-end: 3;
@@ -791,7 +791,7 @@ body {
     }
 }
 
-.form__inpsub {
+.form__submit-section {
     @include l_size {
         grid-column-start: 1;
         grid-column-end: 3;

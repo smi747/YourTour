@@ -174,6 +174,19 @@ body {
   color: white;
 }
 
+.title {
+  color: #1b1f2b;
+  font-weight: 700;
+  font-size: 59px;
+  line-height: 124%;
+
+  @include s_size {
+    letter-spacing: 0.02em;
+    font-size: 34px;
+    line-height: 112%;
+  }
+}
+
 .header__title {
   width: 768px;
   margin-bottom: 50px;
@@ -252,17 +265,10 @@ body {
 }
 
 .tours__title {
-  color: #1b1f2b;
-  font-weight: 700;
-  font-size: 59px;
-  line-height: 124%;
   margin-bottom: 35px;
 
   @include s_size {
     margin-bottom: 30px;
-    font-size: 34px;
-    line-height: 112%;
-    letter-spacing: 0.02em;
   }
 }
 
@@ -484,19 +490,35 @@ body {
   }
 }
 
-.title {
+.stories__title {
   margin-bottom: 30px;
-  color: #1b1f2b;
-  font-weight: 700;
-  font-size: 59px;
-  line-height: 124%;
-  text-align: center;
 
   @include s_size {
     margin-bottom: 20px;
-    font-size: 34px;
-    line-height: 112%;
-    letter-spacing: 0.02em;
+  }
+}
+
+.form__title {
+  margin-bottom: 30px;
+
+  @include s_size {
+    margin-bottom: 20px;
+  }
+}
+
+.feedback__title {
+  margin-bottom: 30px;
+
+  @include s_size {
+    margin-bottom: 20px;
+  }
+}
+
+.photos__title {
+  margin-bottom: 30px;
+
+  @include s_size {
+    margin-bottom: 20px;
   }
 }
 

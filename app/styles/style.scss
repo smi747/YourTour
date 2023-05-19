@@ -111,8 +111,7 @@ body {
 }
 
 //Скрытое меню
-.header__top.show {
-  width: 100%;
+.header__top_show {
   position: fixed;
   top: 0;
   background: rgba(243, 239, 232, 0.6);

@@ -112,49 +112,49 @@
         <section class="form body__form" id="choose">
             <h2 class="title form__title">Собери свой тур</h2>
             <p class="desc desc_form">Идейные соображения высшего порядка,<br>a также рамки и место обучения кадров</p>
-            <form class="form__inputs">
-                <div class="form__inputs-elem">
-                    <label class="form__label" for="user_name">Имя</label>
-                    <input class="form__field" name="user_name" id="user_name" type="text" placeholder="Введите Ваше имя">
+            <form class="form__fields">
+                <div class="field form__field">
+                    <label class="field__label" for="user_name">Имя</label>
+                    <input class="field__input" name="user_name" id="user_name" type="text" placeholder="Введите Ваше имя">
                 </div>
-                <div class="form__inputs-elem">
-                    <label class="form__label" for="direction">Направление</label>
-                    <select class="form__field form__field_where" name="direction" id="direction" type="text" placeholder="Куда хотите ехать">
+                <div class="field form__field">
+                    <label class="field__label" for="direction">Направление</label>
+                    <select class="field__input field__input_where" name="direction" id="direction" type="text" placeholder="Куда хотите ехать">
                         <option value="def" selected disabled value>Куда хотите ехать</option>
-                        <option class="form__option">Тверь</option>
-                        <option class="form__option">Москва</option>
-                        <option class="form__option">Санкт-Петербург</option>
+                        <option class="field__option">Тверь</option>
+                        <option class="field__option">Москва</option>
+                        <option class="field__option">Санкт-Петербург</option>
                     </select>
                 </div>
-                <div class="form__inputs-elem">
-                    <label class="form__label" for="user_mail">Email</label>
-                    <input class="form__field" name="user_mail" id="user_mail" type="email" placeholder="example@mail.com">
+                <div class="field form__field">
+                    <label class="field__label" for="user_mail">Email</label>
+                    <input class="field__input" name="user_mail" id="user_mail" type="email" placeholder="example@mail.com">
                 </div>
-                <div class="form__inputs-elem">
-                    <label class="form__label" for="user_phone">Телефон</label>
-                    <input class="form__field" name="user_phone" id="user_phone" type="tel" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _">
+                <div class="field form__field">
+                    <label class="field__label" for="user_phone">Телефон</label>
+                    <input class="field__input" name="user_phone" id="user_phone" type="tel" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _">
                 </div>
-                <div class="form__inputs-elem">
-                    <label class="form__label" for="date_from">Дата от</label>
-                    <input class="form__field" name="date_from" id="date_from" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="ДД.ММ.ГГГГ">
+                <div class="field form__field">
+                    <label class="field__label" for="date_from">Дата от</label>
+                    <input class="field__input" name="date_from" id="date_from" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="ДД.ММ.ГГГГ">
                 </div>
-                <div class="form__inputs-elem">
-                    <label class="form__label" for="date_to">Дата до</label>
-                    <input class="form__field" name="date_to" id="date_to" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="ДД.ММ.ГГГГ">
+                <div class="field form__field">
+                    <label class="field__label" for="date_to">Дата до</label>
+                    <input class="field__input" name="date_to" id="date_to" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="ДД.ММ.ГГГГ">
                 </div>
-                <div class="form__inputs-elem-big">
-                    <label class="form__label" for="user_feedback">Комментарий</label>
-                    <textarea class="form__field form__field_area" name="user_feedback" id="user_feedback"></textarea>
+                <div class="field field_big form__field">
+                    <label class="field__label" for="user_feedback">Комментарий</label>
+                    <textarea class="field__input field__input_area" name="user_feedback" id="user_feedback"></textarea>
                 </div>
-                <div class="form__inputs-elem-big">
-                    <p class="form__label">Вам есть 18 лет?</p>
-                    <div class="form__radio">
-                        <div class="form__label"><input class="form__radiocircle" name="is_adult" type="radio" value="positive" id="circle_1"><label for="circle_1"></label>Да</div>
-                        <div class="form__label"><input class="form__radiocircle" name="is_adult" type="radio" value="negative" id="circle_2" checked><label for="circle_2"></label>Нет</div>
+                <div class="field field_big form__field">
+                    <p class="field__label">Вам есть 18 лет?</p>
+                    <div class="field__radio">
+                        <div class="field__label"><input class="field__radiocircle" name="is_adult" type="radio" value="positive" id="circle_1"><label for="circle_1"></label>Да</div>
+                        <div class="field__label"><input class="field__radiocircle" name="is_adult" type="radio" value="negative" id="circle_2" checked><label for="circle_2"></label>Нет</div>
                     </div>
                 </div>
-                <div class="form__inputs-elem-big">
-                    <div class="form__agreedwrap"><input class="form__checkbox" type="checkbox" id="license_agreement" name="license_agreement" value="agreed"><label for="license_agreement"></label><div class="form__agreed">Нажимая кнопку, я принимаю условия <a class="form__license" href="">Лицензионного договора</a></div></div>
+                <div class="field field_big form__field">
+                    <div class="field__agreedwrap"><input class="field__checkbox" type="checkbox" id="license_agreement" name="license_agreement" value="agreed"><label for="license_agreement"></label><div class="field__agreed">Нажимая кнопку, я принимаю условия <a class="field__license" href="">Лицензионного договора</a></div></div>
                 </div>
                 <div class="form__submit-section">
                     <button class="form__button form__button_heavy" type="submit">Найти тур</button>

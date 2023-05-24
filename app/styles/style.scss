@@ -1119,28 +1119,27 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include l_size {
+      width: 1170px;
+      gap: 50px;
+    }
+    @include m_size {
+      width: 918px;
+      gap: 50px;
+    }
+    @include s_size {
+      min-width: 318px;
+      gap: 20px;
+    }
+  }
 }
 
-.stories__list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @include l_size {
-    width: 1170px;
-    gap: 50px;
-  }
-  @include m_size {
-    width: 918px;
-    gap: 50px;
-  }
-  @include s_size {
-    min-width: 318px;
-    gap: 20px;
-  }
-}
-
-.stories__card {
+.stories-card {
   display: block;
   position: relative;
   width: 1170px;
@@ -1153,83 +1152,148 @@ html {
     width: 318px;
     height: 455px;
   }
-}
+  &__pictureblock {
+    &::after {
+      background: linear-gradient(
+        270deg,
+        rgba(0, 0, 0, 0) 0.01%,
+        rgba(0, 0, 0, 0.2) 100%
+      );
+    }
+  }
+  &__picture {
+    height: 100%;
+    transition: all 0.3s ease;
+    object-fit: cover;
+    .stories-card:hover & {
+      transform: scale(1.2);
+    }
+  }
+  &__desc {
+    margin-top: 37px;
 
-.stories__pictureblock {
-  &::after {
-    background: linear-gradient(
-      270deg,
-      rgba(0, 0, 0, 0) 0.01%,
-      rgba(0, 0, 0, 0.2) 100%
-    );
+    @include s_size {
+      margin-top: 20px;
+    }
+  }
+  &__info {
+    pointer-events: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #ffffff;
+
+    padding: 60px;
+    @include s_size {
+      padding: 30px;
+    }
+  }
+  &__cardfooter {
+    margin-top: auto;
+  }
+  &__name {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 122%;
+
+    @include s_size {
+      width: 140px;
+      font-weight: 700;
+      font-size: 23px;
+      line-height: 120%;
+      letter-spacing: 0.04em;
+    }
   }
 }
 
-.stories__picture {
-  height: 100%;
-  transition: all 0.3s ease;
-  object-fit: cover;
-  .stories__card:hover & {
-    transform: scale(1.2);
-  }
-}
-
-.stories__desc {
+.card-desc {
   width: 554px;
   font-weight: 400;
   font-size: 20px;
   line-height: 142%;
 
-  margin-top: 37px;
-
   @include s_size {
-    margin-top: 20px;
     width: 263px;
     font-size: 16px;
   }
-}
+  &__ul {
+    list-style-type: disc !important;
+    list-style-position: inside !important;
+    margin-top: -3px;
+    margin-left: 14px;
+    line-height: 128%;
 
-.stories__info {
-  pointer-events: none;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  color: #ffffff;
+    @include s_size {
+      margin-top: 0;
+      margin-left: 9px;
+      line-height: 142%;
+    }
+  }
+  &__li {
+    position: relative;
 
-  padding: 60px;
-  @include s_size {
-    padding: 30px;
+    &::marker {
+      font-size: 0.7em;
+    }
+  }
+  &__li-p {
+    position: absolute;
+    top: 3px;
+    left: 16px;
   }
 }
 
-.stories__cardfooter {
+.cardfooter {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-top: auto;
-}
+  &__arrow {
+    width: 22px;
+  }
+  &__socials {
+    pointer-events: all;
+    display: flex;
+    gap: 35px;
 
-.stories__more {
-  display: flex;
-  gap: 16px;
-  font-weight: 700;
-  font-size: 23px;
-  line-height: 122%;
-  color: #ffffff;
-
-  @include s_size {
-    font-size: 16px;
+    @include s_size {
+      display: none;
+    }
+  }
+  &__link {
+    font-weight: 400;
+    font-size: 20px;
     line-height: 142%;
+    color: #ffffff;
+
+    &:active {
+      color: #efa501;
+      text-decoration-color: currentColor;
+      transition: all 0.3s ease-out;
+    }
+  }
+  &__more {
+    display: flex;
+    gap: 16px;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 122%;
+    color: #ffffff;
+
+    @include s_size {
+      font-size: 16px;
+      line-height: 142%;
+    }
   }
 }
 
-.stories__more {
-  .stories__pictureblock:hover ~ .stories__info & {
+//Фон для "Подробнее" при наведении на карточку с туром
+.cardfooter__more {
+  .stories-card__pictureblock:hover ~ .stories-card__info & {
     background-color: #286562;
     border-radius: 50px;
     padding: 7px 20px;
@@ -1237,7 +1301,7 @@ html {
     margin-bottom: -7px;
     transition: background-color 0.3s ease;
   }
-  .stories__pictureblock:active ~ .stories__info & {
+  .stories-card__pictureblock:active ~ .stories-card__info & {
     background-color: #efa501;
     border-radius: 50px;
     padding: 7px 20px;
@@ -1245,75 +1309,7 @@ html {
     margin-bottom: -7px;
   }
 }
-
-.stories__ul {
-  list-style-type: disc !important;
-  list-style-position: inside !important;
-  margin-top: -3px;
-  margin-left: 14px;
-  line-height: 128%;
-
-  @include s_size {
-    margin-top: 0;
-    margin-left: 9px;
-    line-height: 142%;
-  }
-}
-
-.stories__li {
-  position: relative;
-
-  &::marker {
-    font-size: 0.7em;
-  }
-}
-
-.stories__li-p {
-  position: absolute;
-  top: 3px;
-  left: 16px;
-}
-
-.stories__name {
-  font-weight: 500;
-  font-size: 35px;
-  line-height: 122%;
-
-  @include s_size {
-    width: 140px;
-    font-weight: 700;
-    font-size: 23px;
-    line-height: 120%;
-    letter-spacing: 0.04em;
-  }
-}
-
-.stories__arrow {
-  width: 22px;
-}
-
-.stories__socials {
-  pointer-events: all;
-  display: flex;
-  gap: 35px;
-
-  @include s_size {
-    display: none;
-  }
-}
-
-.stories__link {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 142%;
-  color: #ffffff;
-
-  &:active {
-    color: #efa501;
-    text-decoration-color: currentColor;
-    transition: all 0.3s ease-out;
-  }
-}
+//-------------------------------------------------------------
 
 .body__ending {
   padding-top: 135px;

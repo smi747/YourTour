@@ -911,27 +911,27 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  &__list {
+    display: flex;
+
+    @include l_size {
+      width: 1170px;
+      gap: 30px;
+    }
+    @include m_size {
+      width: 918px;
+      gap: 18px;
+    }
+    @include s_size {
+      flex-wrap: wrap;
+      gap: 18px;
+      justify-content: center;
+    }
+  }
 }
 
-.feedback__list {
-  display: flex;
-
-  @include l_size {
-    width: 1170px;
-    gap: 30px;
-  }
-  @include m_size {
-    width: 918px;
-    gap: 18px;
-  }
-  @include s_size {
-    flex-wrap: wrap;
-    gap: 18px;
-    justify-content: center;
-  }
-}
-
-.feedback__element {
+.feedback-element {
   display: flex;
   flex-basis: 50%;
   justify-content: space-between;
@@ -949,64 +949,59 @@ html {
     max-width: 318px;
     min-width: 318px;
   }
-}
 
-.feedback__text {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 23px;
-  line-height: 122%;
-  color: #1b1f2b;
-
-  @include s_size {
-    font-size: 16px;
-    line-height: 142%;
-  }
-}
-
-.feedback__foot {
-  display: flex;
-  justify-content: space-between;
-
-  @include s_size {
-    align-items: end;
-  }
-}
-
-.feedback__sub {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.feedback__author {
-  font-weight: 500;
-  font-size: 35px;
-  line-height: 122%;
-  color: #1b1f2b;
-
-  @include s_size {
+  &__text {
+    font-style: normal;
     font-weight: 700;
     font-size: 23px;
-    line-height: 120%;
-    letter-spacing: 0.04em;
+    line-height: 122%;
+    color: #1b1f2b;
+
+    @include s_size {
+      font-size: 16px;
+      line-height: 142%;
+    }
   }
-}
+  &__foot {
+    display: flex;
+    justify-content: space-between;
 
-.feedback__tour {
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 142%;
-  letter-spacing: -0.01em;
-  color: #a6a6a6;
-
-  @include s_size {
-    font-size: 16px;
+    @include s_size {
+      align-items: end;
+    }
   }
-}
+  &__sub {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  &__author {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 122%;
+    color: #1b1f2b;
 
-.feedback__picture {
-  border-radius: 100px;
+    @include s_size {
+      font-weight: 700;
+      font-size: 23px;
+      line-height: 120%;
+      letter-spacing: 0.04em;
+    }
+  }
+  &__tour {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 142%;
+    letter-spacing: -0.01em;
+    color: #a6a6a6;
+
+    @include s_size {
+      font-size: 16px;
+    }
+  }
+  &__picture {
+    border-radius: 100px;
+  }
 }
 
 .body__photos {

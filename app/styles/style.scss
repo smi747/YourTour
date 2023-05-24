@@ -5,6 +5,19 @@ $primarylineheight: 142%;
 $linkhoverclr: #286562;
 $linkactiveclr: #efa501;
 
+@mixin padding($top, $right, $bottom, $left) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
+@mixin flex($flexdir, $align, $justify) {
+  display: flex;
+  flex-direction: $flexdir;
+  align-items: $align;
+  justify-content: $justify;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -23,19 +36,15 @@ html {
 }
 
 .body__header {
-  padding-left: 57px;
-  padding-right: 57px;
+  @include padding(0, 57px, 0, 57px);
 
   @include s_size {
-    padding-left: 20px;
-    padding-right: 20px;
+    @include padding(0, 20px, 0, 20px);
   }
 }
 
 .header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex(column, center, unset);
   height: 831px;
 
   background-position: top center;
@@ -76,8 +85,7 @@ html {
     }
   }
   &__top {
-    display: flex;
-    justify-content: center;
+    @include flex(unset, unset, center);
     width: 100%;
     top: -88px;
     transition: top 1s;
@@ -150,9 +158,7 @@ html {
 }
 
 .navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex(unset, center, space-between);
 
   width: 100%;
   height: 88px;
@@ -258,15 +264,12 @@ html {
 .body__tours {
   padding-top: 135px;
   @include s_size {
-    padding: 0 21px;
-    padding-top: 75px;
+    @include padding(75px, 21px, 0, 21px);
   }
 }
 
 .tours {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex(column, center, unset);
 
   &__title {
     margin-bottom: 35px;
@@ -276,9 +279,8 @@ html {
     }
   }
   &__list {
-    display: flex;
+    @include flex(unset, unset, center);
     flex-wrap: wrap;
-    justify-content: center;
 
     @include l_size {
       width: 1170px;
@@ -296,9 +298,8 @@ html {
 }
 
 .tours-menu {
-  display: flex;
+  @include flex(unset, unset, center);
   flex-wrap: wrap;
-  justify-content: center;
   gap: 30px;
   margin-bottom: 106px;
 
@@ -367,10 +368,8 @@ html {
     }
   }
   &__info {
+    @include flex(column, unset, start);
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
     position: absolute;
     top: 0;
     left: 0;
@@ -439,9 +438,7 @@ html {
 }
 
 .pictureblock {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex(unset, center, center);
   width: 100%;
   height: 100%;
   position: relative;
@@ -475,21 +472,15 @@ html {
 }
 
 .body__form {
-  padding-top: 135px;
-  padding-left: 53px;
-  padding-right: 53px;
+  @include padding(135px, 53px, 0, 53px);
 
   @include s_size {
-    padding-left: 21px;
-    padding-right: 21px;
-    padding-top: 75px;
+    @include padding(75px, 21px, 0, 21px);
   }
 }
 
 .form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex(column, center, unset);
 
   &__title {
     margin-bottom: 30px;
@@ -905,16 +896,12 @@ html {
   padding-top: 135px;
 
   @include s_size {
-    padding-top: 75px;
-    padding-left: 21px;
-    padding-right: 21px;
+    @include padding(75px, 21px, 0, 21px);
   }
 }
 
 .feedback {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex(column, center, unset);
 
   &__list {
     display: flex;
@@ -1009,9 +996,7 @@ html {
 }
 
 .body__photos {
-  padding-top: 135px;
-  padding-left: 29px;
-  padding-right: 29px;
+  @include padding(135px, 29px, 0, 29px);
 
   @include m_size {
     padding-left: 20px;
@@ -1019,16 +1004,12 @@ html {
   }
 
   @include s_size {
-    padding-top: 75px;
-    padding-left: 21px;
-    padding-right: 21px;
+    @include padding(75px, 21px, 0, 21px);
   }
 }
 
 .photos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex(column, center, unset);
 }
 
 .photos__list {
@@ -1103,9 +1084,7 @@ html {
 }
 
 .body__stories {
-  padding-top: 135px;
-  padding-left: 29px;
-  padding-right: 29px;
+  @include padding(135px, 29px, 0, 29px);
 
   @include m_size {
     padding-left: 20px;
@@ -1113,20 +1092,15 @@ html {
   }
 
   @include s_size {
-    padding-top: 75px;
-    padding-left: 21px;
-    padding-right: 21px;
+    @include padding(75px, 21px, 0, 21px);
   }
 }
 
 .stories {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex(column, center, unset);
+
   &__list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex(column, center, unset);
 
     @include l_size {
       width: 1170px;
@@ -1181,11 +1155,9 @@ html {
     }
   }
   &__info {
+    @include flex(column, unset, start);
     pointer-events: none;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
     position: absolute;
     top: 0;
     left: 0;
@@ -1253,9 +1225,8 @@ html {
 }
 
 .cardfooter {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  @include flex(unset, baseline, space-between);
+
   &__arrow {
     width: 22px;
   }
@@ -1316,25 +1287,19 @@ html {
 //-------------------------------------------------------------
 
 .body__ending {
-  padding-top: 135px;
-  padding-left: 29px;
-  padding-right: 29px;
+  @include padding(135px, 29px, 0, 29px);
 
   @include m_size {
     padding-left: 20px;
     padding-right: 20px;
   }
   @include s_size {
-    padding-top: 75px;
-    padding-left: 21px;
-    padding-right: 21px;
+    @include padding(75px, 21px, 0, 21px);
   }
 }
 
 .ending {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(unset, center, center);
   gap: 30px;
 
   @include s_size {
@@ -1343,9 +1308,7 @@ html {
 }
 
 .ending__pictureblock {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex(unset, center, center);
   overflow: hidden;
 
   border-radius: 50px;

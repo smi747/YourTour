@@ -1,9 +1,6 @@
 @import "reset";
 @import "media";
-
-$primarylineheight: 142%;
-$linkhoverclr: #286562;
-$linkactiveclr: #efa501;
+@import "vars";
 
 @mixin padding($top, $right, $bottom, $left) {
   padding-top: $top;

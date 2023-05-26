@@ -1,9 +1,15 @@
-@mixin l_size {
-  @media (min-width: 1200px) { @content; }
+@mixin desktop {
+  @media (min-width: 1200px) {
+    @content;
+  }
 }
-@mixin m_size {
-  @media (min-width: 940px) and (max-width: 1200px) { @content; }
+@mixin tablet {
+  @media (min-width: 940px) and (max-width: 1200px) {
+    @content;
+  }
 }
-@mixin s_size {
-  @media (max-width: 940px) { @content; }
+@mixin mobile {
+  @media (max-width: 940px) {
+    @content;
+  }
 }

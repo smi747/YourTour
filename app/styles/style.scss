@@ -38,7 +38,7 @@ html {
 .body__header {
   @include padding(0, 57px, 0, 57px);
 
-  @include s_size {
+  @include mobile {
     @include padding(0, 20px, 0, 20px);
   }
 }
@@ -52,10 +52,10 @@ html {
   background-repeat: no-repeat;
   transition: top 1s;
 
-  @include l_size {
+  @include desktop {
     background-image: url("../images/header_section/header-background.jpg");
   }
-  @include m_size {
+  @include tablet {
     background-image: linear-gradient(
         180deg,
         rgba(0, 0, 0, 0.4) 0%,
@@ -64,7 +64,7 @@ html {
       linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
       url(../images/header_section/header-background-small.jpg);
   }
-  @include s_size {
+  @include mobile {
     height: 488px;
     background-image: linear-gradient(
         180deg,
@@ -80,7 +80,7 @@ html {
     height: 88px;
     margin-bottom: 119px;
 
-    @include s_size {
+    @include mobile {
       margin-bottom: 52px;
     }
   }
@@ -103,7 +103,7 @@ html {
     text-align: center;
     letter-spacing: 0.02em;
 
-    @include s_size {
+    @include mobile {
       width: 360px;
       margin-bottom: 40px;
       font-size: 34px;
@@ -117,13 +117,13 @@ html {
     line-height: $primarylineheight;
     text-align: center;
 
-    @include l_size {
+    @include desktop {
       width: 562px;
     }
-    @include m_size {
+    @include tablet {
       width: 442px;
     }
-    @include s_size {
+    @include mobile {
       width: 310px;
       margin-bottom: 40px;
       font-weight: 400;
@@ -142,7 +142,7 @@ html {
     background-color: white;
     color: #1b1f2b;
 
-    @include s_size {
+    @include mobile {
       font-size: 16px;
     }
 
@@ -166,13 +166,13 @@ html {
   font-size: 20px;
   line-height: $primarylineheight;
 
-  @include l_size {
+  @include desktop {
     max-width: 1168px;
   }
-  @include m_size {
+  @include tablet {
     max-width: 910px;
   }
-  @include s_size {
+  @include mobile {
     margin-bottom: 52px;
     font-size: 16px;
   }
@@ -180,20 +180,20 @@ html {
   &__logo {
     width: auto;
 
-    @include s_size {
+    @include mobile {
       width: 133px;
     }
   }
   &__list {
     display: flex;
 
-    @include l_size {
+    @include desktop {
       gap: 50px;
     }
-    @include m_size {
+    @include tablet {
       gap: 30px;
     }
-    @include s_size {
+    @include mobile {
       display: none;
     }
   }
@@ -217,7 +217,7 @@ html {
     margin-bottom: 0;
     color: #1b1f2b;
 
-    @include s_size {
+    @include mobile {
       padding: 0 20px;
     }
   }
@@ -254,7 +254,7 @@ html {
   line-height: 124%;
   text-align: center;
 
-  @include s_size {
+  @include mobile {
     letter-spacing: 0.02em;
     font-size: 34px;
     line-height: 112%;
@@ -263,7 +263,7 @@ html {
 
 .body__tours {
   padding-top: 135px;
-  @include s_size {
+  @include mobile {
     @include padding(75px, 21px, 0, 21px);
   }
 }
@@ -274,7 +274,7 @@ html {
   &__title {
     margin-bottom: 35px;
 
-    @include s_size {
+    @include mobile {
       margin-bottom: 30px;
     }
   }
@@ -282,15 +282,15 @@ html {
     @include flex(unset, unset, center);
     flex-wrap: wrap;
 
-    @include l_size {
+    @include desktop {
       width: 1170px;
       gap: 30px;
     }
-    @include m_size {
+    @include tablet {
       width: 918px;
       gap: 18px;
     }
-    @include s_size {
+    @include mobile {
       min-width: 318px;
       gap: 18px;
     }
@@ -303,7 +303,7 @@ html {
   gap: 30px;
   margin-bottom: 106px;
 
-  @include s_size {
+  @include mobile {
     margin-bottom: 50px;
     gap: 10px;
   }
@@ -318,7 +318,7 @@ html {
     outline: none;
     background: transparent;
 
-    @include s_size {
+    @include mobile {
       font-size: 16px;
       line-height: $primarylineheight;
     }
@@ -340,11 +340,11 @@ html {
   position: relative;
   width: 370px;
 
-  @include m_size {
+  @include tablet {
     width: 450px;
     height: 531px;
   }
-  @include s_size {
+  @include mobile {
     width: 318px;
     height: 318px;
   }
@@ -377,7 +377,7 @@ html {
     color: #ffffff;
 
     padding: 50px;
-    @include s_size {
+    @include mobile {
       padding: 25px;
     }
   }
@@ -386,7 +386,7 @@ html {
     font-size: 35px;
     line-height: 122%;
 
-    @include s_size {
+    @include mobile {
       font-weight: 700;
       font-size: 23px;
       line-height: 120%;
@@ -400,7 +400,7 @@ html {
     letter-spacing: -0.01em;
     margin-top: 16px;
 
-    @include s_size {
+    @include mobile {
       font-size: 16px;
       margin-top: 13px;
     }
@@ -414,7 +414,7 @@ html {
     margin-top: auto;
     align-self: flex-start;
 
-    @include s_size {
+    @include mobile {
       font-size: 16px;
       line-height: $primarylineheight;
     }
@@ -445,7 +445,7 @@ html {
   overflow: hidden;
 
   border-radius: 50px;
-  @include s_size {
+  @include mobile {
     border-radius: 20px;
   }
 
@@ -464,7 +464,7 @@ html {
     );
     border-radius: 50px;
 
-    @include s_size {
+    @include mobile {
       border-radius: 20px;
     }
     pointer-events: none;
@@ -474,7 +474,7 @@ html {
 .body__form {
   @include padding(135px, 53px, 0, 53px);
 
-  @include s_size {
+  @include mobile {
     @include padding(75px, 21px, 0, 21px);
   }
 }
@@ -485,7 +485,7 @@ html {
   &__title {
     margin-bottom: 30px;
 
-    @include s_size {
+    @include mobile {
       margin-bottom: 20px;
     }
   }
@@ -494,7 +494,7 @@ html {
 .stories__title {
   margin-bottom: 30px;
 
-  @include s_size {
+  @include mobile {
     margin-bottom: 20px;
   }
 }
@@ -502,7 +502,7 @@ html {
 .feedback__title {
   margin-bottom: 30px;
 
-  @include s_size {
+  @include mobile {
     margin-bottom: 20px;
   }
 }
@@ -510,7 +510,7 @@ html {
 .photos__title {
   margin-bottom: 30px;
 
-  @include s_size {
+  @include mobile {
     margin-bottom: 20px;
   }
 }
@@ -525,7 +525,7 @@ html {
   line-height: $primarylineheight;
   text-align: center;
 
-  @include s_size {
+  @include mobile {
     width: 318px;
     font-size: 16px;
     margin-bottom: 50px;
@@ -533,7 +533,7 @@ html {
 }
 
 .desc_form {
-  @include s_size {
+  @include mobile {
     margin-bottom: 40px;
   }
 }
@@ -544,19 +544,19 @@ html {
   max-width: 1170px;
   width: 100%;
 
-  @include l_size {
+  @include desktop {
     grid-template-columns: 1fr 1fr;
     gap: 33px 30px;
     padding: 70px;
     border-radius: 50px;
   }
-  @include m_size {
+  @include tablet {
     grid-template-columns: 1fr 1fr;
     gap: 33px 20px;
     padding: 60px;
     border-radius: 50px;
   }
-  @include s_size {
+  @include mobile {
     grid-template-columns: 1fr;
     padding: 20px;
     padding-bottom: 40px;
@@ -567,11 +567,11 @@ html {
 
 .field {
   &_big {
-    @include l_size {
+    @include desktop {
       grid-column-start: 1;
       grid-column-end: 3;
     }
-    @include m_size {
+    @include tablet {
       grid-column-start: 1;
       grid-column-end: 3;
     }
@@ -587,7 +587,7 @@ html {
     font-size: 20px;
     line-height: $primarylineheight;
 
-    @include s_size {
+    @include mobile {
       font-size: 16px;
     }
   }
@@ -605,7 +605,7 @@ html {
     line-height: $primarylineheight;
     margin-top: 8px;
 
-    @include s_size {
+    @include mobile {
       font-size: 16px;
       padding: 9px;
       height: 43px;
@@ -623,7 +623,7 @@ html {
       font-size: 20px !important;
       font-weight: 400 !important;
       line-height: $primarylineheight !important;
-      @include s_size {
+      @include mobile {
         font-size: 16px !important;
       }
     }
@@ -634,7 +634,7 @@ html {
       background-repeat: no-repeat;
       background-position: right 24px top 50%;
 
-      @include s_size {
+      @include mobile {
         padding: 10.5px 9px;
         height: 46px;
         background-position: right 14px top 50%;
@@ -645,7 +645,7 @@ html {
       resize: none;
       vertical-align: top;
 
-      @include s_size {
+      @include mobile {
         height: 132px;
       }
     }
@@ -666,7 +666,7 @@ html {
     margin: 0;
     margin-right: 11px;
 
-    @include s_size {
+    @include mobile {
       width: 20px;
       height: 20px;
     }
@@ -692,15 +692,15 @@ html {
     font-weight: 400;
     line-height: $primarylineheight;
 
-    @include l_size {
+    @include desktop {
       letter-spacing: -0.01em;
       font-size: 17px;
     }
-    @include m_size {
+    @include tablet {
       letter-spacing: -0.01em;
       font-size: 17px;
     }
-    @include s_size {
+    @include mobile {
       font-size: 16px;
     }
   }
@@ -711,13 +711,13 @@ html {
     vertical-align: top;
     margin: 0;
 
-    @include l_size {
+    @include desktop {
       margin-right: 19px;
     }
-    @include m_size {
+    @include tablet {
       margin-right: 11px;
     }
-    @include s_size {
+    @include mobile {
       margin-right: 10px;
       width: 20px;
       height: 20px;
@@ -744,7 +744,7 @@ html {
 
     margin-right: 11px;
 
-    @include s_size {
+    @include mobile {
       margin-right: 10px;
     }
   }
@@ -756,7 +756,7 @@ html {
     background-repeat: no-repeat;
     background-position: center center;
 
-    @include s_size {
+    @include mobile {
       width: 20px;
       height: 20px;
       background-size: 20px 20px;
@@ -768,7 +768,7 @@ html {
     background-image: url("../images/svg_elements/radio.svg"),
       url("../images/svg_elements/circle.svg");
 
-    @include s_size {
+    @include mobile {
       background-image: url("../images/svg_elements/radio.svg"),
         url("../images/svg_elements/circle.svg");
       background-size: 20px 20px, 9.23px 9.23px;
@@ -789,10 +789,10 @@ html {
     user-select: none;
     margin-right: 19px;
 
-    @include m_size {
+    @include tablet {
       margin-right: 11px;
     }
-    @include s_size {
+    @include mobile {
       margin-right: 10px;
     }
   }
@@ -804,7 +804,7 @@ html {
     background-repeat: no-repeat;
     background-position: center center;
 
-    @include s_size {
+    @include mobile {
       width: 20px;
       height: 20px;
       background-size: 20px 20px;
@@ -816,7 +816,7 @@ html {
     background-image: url("../images/svg_elements/checkbox.svg"),
       url("../images/svg_elements/checked.svg");
 
-    @include s_size {
+    @include mobile {
       background-image: url("../images/svg_elements/checkbox.svg"),
         url("../images/svg_elements/checked_small.svg");
       background-size: 20px 20px, auto;
@@ -826,18 +826,18 @@ html {
 //----------------------------------------------------------
 
 .form__submit-section {
-  @include l_size {
+  @include desktop {
     grid-column-start: 1;
     grid-column-end: 3;
   }
-  @include m_size {
+  @include tablet {
     grid-column-start: 1;
     grid-column-end: 3;
   }
   display: flex;
   gap: 30px;
 
-  @include s_size {
+  @include mobile {
     gap: 10px;
   }
 }
@@ -851,7 +851,7 @@ html {
   border: none;
   outline: none;
 
-  @include s_size {
+  @include mobile {
     padding: 12px 0;
     font-size: 16px;
   }
@@ -862,7 +862,7 @@ html {
     background-color: #286562;
     color: #ffffff;
 
-    @include s_size {
+    @include mobile {
       padding-right: 29.5px;
       padding-left: 29.5px;
     }
@@ -879,7 +879,7 @@ html {
     background-color: #e0f0e5;
     color: #286562;
 
-    @include s_size {
+    @include mobile {
       padding-right: 31px;
       padding-left: 31px;
     }
@@ -895,7 +895,7 @@ html {
 .body__feedback {
   padding-top: 135px;
 
-  @include s_size {
+  @include mobile {
     @include padding(75px, 21px, 0, 21px);
   }
 }
@@ -906,15 +906,15 @@ html {
   &__list {
     display: flex;
 
-    @include l_size {
+    @include desktop {
       width: 1170px;
       gap: 30px;
     }
-    @include m_size {
+    @include tablet {
       width: 918px;
       gap: 18px;
     }
-    @include s_size {
+    @include mobile {
       flex-wrap: wrap;
       gap: 18px;
       justify-content: center;
@@ -933,7 +933,7 @@ html {
   border-radius: 50px;
   gap: 70px;
 
-  @include s_size {
+  @include mobile {
     padding: 20px;
     border-radius: 20px;
     gap: 40px;
@@ -948,7 +948,7 @@ html {
     line-height: 122%;
     color: #1b1f2b;
 
-    @include s_size {
+    @include mobile {
       font-size: 16px;
       line-height: $primarylineheight;
     }
@@ -957,7 +957,7 @@ html {
     display: flex;
     justify-content: space-between;
 
-    @include s_size {
+    @include mobile {
       align-items: end;
     }
   }
@@ -972,7 +972,7 @@ html {
     line-height: 122%;
     color: #1b1f2b;
 
-    @include s_size {
+    @include mobile {
       font-weight: 700;
       font-size: 23px;
       line-height: 120%;
@@ -986,7 +986,7 @@ html {
     letter-spacing: -0.01em;
     color: #a6a6a6;
 
-    @include s_size {
+    @include mobile {
       font-size: 16px;
     }
   }
@@ -998,12 +998,12 @@ html {
 .body__photos {
   @include padding(135px, 29px, 0, 29px);
 
-  @include m_size {
+  @include tablet {
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  @include s_size {
+  @include mobile {
     @include padding(75px, 21px, 0, 21px);
   }
 }
@@ -1019,10 +1019,10 @@ html {
   margin-bottom: 30px;
   max-width: 1860px;
 
-  @include m_size {
+  @include tablet {
     gap: 20px;
   }
-  @include s_size {
+  @include mobile {
     gap: 10px;
     margin-bottom: 18px;
     max-width: 318px;
@@ -1031,27 +1031,27 @@ html {
     margin-bottom: 0;
   }
   &_gap {
-    @include s_size {
+    @include mobile {
       gap: 18px;
     }
   }
   &_small {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
-    @include m_size {
+    @include tablet {
       grid-template-columns: 1fr 1fr 1fr;
     }
-    @include s_size {
+    @include mobile {
       grid-template-columns: 1fr 1fr;
     }
   }
   &_big {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
-    @include m_size {
+    @include tablet {
       grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-    @include s_size {
+    @include mobile {
       grid-template-columns: 1fr 1fr 1fr;
     }
   }
@@ -1064,20 +1064,20 @@ html {
   height: 301px;
   border-radius: 50px;
 
-  @include s_size {
+  @include mobile {
     height: 110px;
     border-radius: 20px;
   }
   &_hidden-m {
-    @include m_size {
+    @include tablet {
       display: none;
     }
-    @include s_size {
+    @include mobile {
       display: none;
     }
   }
   &_hidden-s {
-    @include s_size {
+    @include mobile {
       display: none;
     }
   }
@@ -1086,12 +1086,12 @@ html {
 .body__stories {
   @include padding(135px, 29px, 0, 29px);
 
-  @include m_size {
+  @include tablet {
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  @include s_size {
+  @include mobile {
     @include padding(75px, 21px, 0, 21px);
   }
 }
@@ -1102,15 +1102,15 @@ html {
   &__list {
     @include flex(column, center, unset);
 
-    @include l_size {
+    @include desktop {
       width: 1170px;
       gap: 50px;
     }
-    @include m_size {
+    @include tablet {
       width: 918px;
       gap: 50px;
     }
-    @include s_size {
+    @include mobile {
       min-width: 318px;
       gap: 20px;
     }
@@ -1123,10 +1123,10 @@ html {
   width: 1170px;
   height: 567px;
 
-  @include m_size {
+  @include tablet {
     width: 918px;
   }
-  @include s_size {
+  @include mobile {
     width: 318px;
     height: 455px;
   }
@@ -1150,7 +1150,7 @@ html {
   &__desc {
     margin-top: 37px;
 
-    @include s_size {
+    @include mobile {
       margin-top: 20px;
     }
   }
@@ -1165,7 +1165,7 @@ html {
     color: #ffffff;
 
     padding: 60px;
-    @include s_size {
+    @include mobile {
       padding: 30px;
     }
   }
@@ -1177,7 +1177,7 @@ html {
     font-size: 35px;
     line-height: 122%;
 
-    @include s_size {
+    @include mobile {
       width: 140px;
       font-weight: 700;
       font-size: 23px;
@@ -1193,7 +1193,7 @@ html {
   font-size: 20px;
   line-height: $primarylineheight;
 
-  @include s_size {
+  @include mobile {
     width: 263px;
     font-size: 16px;
   }
@@ -1204,7 +1204,7 @@ html {
     margin-left: 14px;
     line-height: 128%;
 
-    @include s_size {
+    @include mobile {
       margin-top: 0;
       margin-left: 9px;
       line-height: $primarylineheight;
@@ -1235,7 +1235,7 @@ html {
     display: flex;
     gap: 35px;
 
-    @include s_size {
+    @include mobile {
       display: none;
     }
   }
@@ -1259,7 +1259,7 @@ html {
     line-height: 122%;
     color: #ffffff;
 
-    @include s_size {
+    @include mobile {
       font-size: 16px;
       line-height: $primarylineheight;
     }
@@ -1289,11 +1289,11 @@ html {
 .body__ending {
   @include padding(135px, 29px, 0, 29px);
 
-  @include m_size {
+  @include tablet {
     padding-left: 20px;
     padding-right: 20px;
   }
-  @include s_size {
+  @include mobile {
     @include padding(75px, 21px, 0, 21px);
   }
 }
@@ -1302,7 +1302,7 @@ html {
   @include flex(unset, center, center);
   gap: 30px;
 
-  @include s_size {
+  @include mobile {
     flex-direction: column;
   }
 }
@@ -1312,7 +1312,7 @@ html {
   overflow: hidden;
 
   border-radius: 50px;
-  @include s_size {
+  @include mobile {
     border-radius: 20px;
     width: 130px;
     height: 133px;
@@ -1330,7 +1330,7 @@ html {
   gap: 20px;
   width: 371px;
 
-  @include s_size {
+  @include mobile {
     align-items: center;
   }
 }
@@ -1341,7 +1341,7 @@ html {
   line-height: 122%;
   color: #1b1f2b;
 
-  @include s_size {
+  @include mobile {
     width: 291px;
     text-align: center;
     font-weight: 700;
@@ -1357,7 +1357,7 @@ html {
   line-height: $primarylineheight;
   color: #a6a6a6;
 
-  @include s_size {
+  @include mobile {
     text-align: center;
     font-size: 16px;
   }
@@ -1383,7 +1383,7 @@ html {
   margin-top: 135px;
   padding: 30px 53px;
 
-  @include s_size {
+  @include mobile {
     padding: 21px 0;
     margin-top: 75px;
   }
@@ -1399,7 +1399,7 @@ html {
   justify-content: space-between;
   max-width: 1168px;
 
-  @include s_size {
+  @include mobile {
     flex-direction: column;
     align-items: center;
     gap: 7px;
@@ -1412,7 +1412,7 @@ html {
   line-height: $primarylineheight;
   color: #a6a6a6;
 
-  @include s_size {
+  @include mobile {
     font-size: 16px;
   }
 }
@@ -1421,7 +1421,7 @@ html {
   display: flex;
   gap: 25px;
 
-  @include s_size {
+  @include mobile {
     gap: 15px;
   }
 }
@@ -1431,14 +1431,14 @@ html {
   align-items: baseline;
   gap: 12px;
 
-  @include s_size {
+  @include mobile {
     gap: 6.54px;
     align-items: center;
   }
   &_fb {
     gap: 15px;
 
-    @include s_size {
+    @include mobile {
       gap: 8.85px;
     }
   }
@@ -1450,7 +1450,7 @@ html {
     width: 20px;
     height: 12px;
 
-    @include s_size {
+    @include mobile {
       width: 15.38px;
       height: 9.23px;
     }
@@ -1460,7 +1460,7 @@ html {
     width: 8px;
     height: 17px;
 
-    @include s_size {
+    @include mobile {
       width: 6.15px;
       height: 13.08px;
     }
@@ -1470,7 +1470,7 @@ html {
     width: 14px;
     height: 14px;
 
-    @include s_size {
+    @include mobile {
       width: 10.77px;
       height: 10.77px;
     }
@@ -1483,7 +1483,7 @@ html {
   font-size: 20px;
   line-height: $primarylineheight;
 
-  @include s_size {
+  @include mobile {
     font-size: 16px;
   }
 }

@@ -2,12 +2,6 @@
 @import "media";
 @import "vars";
 
-@mixin padding($top, $right, $bottom, $left) {
-  padding-top: $top;
-  padding-right: $right;
-  padding-bottom: $bottom;
-  padding-left: $left;
-}
 @mixin flex($flexdir, $align, $justify) {
   display: flex;
   flex-direction: $flexdir;
@@ -33,10 +27,10 @@ html {
 }
 
 .body__header {
-  @include padding(0, 57px, 0, 57px);
+  padding: 0 57px;
 
   @include mobile {
-    @include padding(0, 20px, 0, 20px);
+    padding: 0 20px;
   }
 }
 
@@ -261,7 +255,7 @@ html {
 .body__tours {
   padding-top: 135px;
   @include mobile {
-    @include padding(75px, 21px, 0, 21px);
+    padding: 75px 21px 0;
   }
 }
 
@@ -469,10 +463,10 @@ html {
 }
 
 .body__form {
-  @include padding(135px, 53px, 0, 53px);
+  padding: 135px 53px 0;
 
   @include mobile {
-    @include padding(75px, 21px, 0, 21px);
+    padding: 75px 21px 0;
   }
 }
 
@@ -555,8 +549,7 @@ html {
   }
   @include mobile {
     grid-template-columns: 1fr;
-    padding: 20px;
-    padding-bottom: 40px;
+    padding: 20px 20px 40px;
     gap: 30px;
     border-radius: 30px;
   }
@@ -893,7 +886,7 @@ html {
   padding-top: 135px;
 
   @include mobile {
-    @include padding(75px, 21px, 0, 21px);
+    padding: 75px 21px 0;
   }
 }
 
@@ -993,7 +986,7 @@ html {
 }
 
 .body__photos {
-  @include padding(135px, 29px, 0, 29px);
+  padding: 135px 29px 0;
 
   @include tablet {
     padding-left: 20px;
@@ -1001,7 +994,7 @@ html {
   }
 
   @include mobile {
-    @include padding(75px, 21px, 0, 21px);
+    padding: 75px 21px 0;
   }
 }
 
@@ -1081,7 +1074,7 @@ html {
 }
 
 .body__stories {
-  @include padding(135px, 29px, 0, 29px);
+  padding: 135px 29px 0;
 
   @include tablet {
     padding-left: 20px;
@@ -1089,7 +1082,7 @@ html {
   }
 
   @include mobile {
-    @include padding(75px, 21px, 0, 21px);
+    padding: 75px 21px 0;
   }
 }
 
@@ -1284,14 +1277,14 @@ html {
 //-------------------------------------------------------------
 
 .body__ending {
-  @include padding(135px, 29px, 0, 29px);
+  padding: 135px 29px 0;
 
   @include tablet {
     padding-left: 20px;
     padding-right: 20px;
   }
   @include mobile {
-    @include padding(75px, 21px, 0, 21px);
+    padding: 75px 21px 0;
   }
 }
 

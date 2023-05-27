@@ -414,16 +414,14 @@ html {
       background-color: $linkhoverclr;
       border-radius: 50px;
       padding: 7px 20px;
-      margin-left: -20px;
-      margin-bottom: -7px;
+      margin: auto 0 -7px -20px;
       transition: background-color 0.3s ease;
     }
     .tours-card:active & {
       background-color: $linkactiveclr;
       border-radius: 50px;
       padding: 7px 20px;
-      margin-left: -20px;
-      margin-bottom: -7px;
+      margin: auto 0 -7px -20px;
     }
   }
 }
@@ -653,8 +651,7 @@ html {
     width: 26px;
     height: 26px;
     vertical-align: top;
-    margin: 0;
-    margin-right: 11px;
+    margin: 0 11px 0 0;
 
     @include mobile {
       width: 20px;
@@ -1190,13 +1187,11 @@ html {
   &__ul {
     list-style-type: disc;
     list-style-position: inside;
-    margin-top: -3px;
-    margin-left: 14px;
+    margin: -3px 0 0 14px;
     line-height: 128%;
 
     @include mobile {
-      margin-top: 0;
-      margin-left: 9px;
+      margin: 0 0 0 9px;
       line-height: $primarylineheight;
     }
   }
@@ -1262,16 +1257,14 @@ html {
     background-color: $linkhoverclr;
     border-radius: 50px;
     padding: 7px 20px;
-    margin-left: -20px;
-    margin-bottom: -7px;
+    margin: 0 0 -7px -20px;
     transition: background-color 0.3s ease;
   }
   .stories-card__pictureblock:active ~ .stories-card__info & {
     background-color: $linkactiveclr;
     border-radius: 50px;
     padding: 7px 20px;
-    margin-left: -20px;
-    margin-bottom: -7px;
+    margin: 0 0 -7px -20px;
   }
 }
 //-------------------------------------------------------------

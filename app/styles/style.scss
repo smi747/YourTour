@@ -844,14 +844,12 @@ html {
   }
 
   &_heavy {
-    padding-right: 70.5px;
-    padding-left: 70.5px;
+    padding: 15px 70.5px;
     background-color: #286562;
     color: #ffffff;
 
     @include mobile {
-      padding-right: 29.5px;
-      padding-left: 29.5px;
+      padding: 12px 29.5px;
     }
     &:hover {
       background-color: #3b7e7b;
@@ -861,14 +859,12 @@ html {
     }
   }
   &_light {
-    padding-right: 72.5px;
-    padding-left: 72.5px;
+    padding: 15px 72.5px;
     background-color: #e0f0e5;
     color: #286562;
 
     @include mobile {
-      padding-right: 31px;
-      padding-left: 31px;
+      padding: 12px 31px;
     }
     &:hover {
       background-color: #f1f3f2;
@@ -986,8 +982,7 @@ html {
   padding: 135px 29px 0;
 
   @include tablet {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 135px 20px 0;
   }
 
   @include mobile {
@@ -1074,8 +1069,7 @@ html {
   padding: 135px 29px 0;
 
   @include tablet {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 135px 20px 0;
   }
 
   @include mobile {
@@ -1273,8 +1267,7 @@ html {
   padding: 135px 29px 0;
 
   @include tablet {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 135px 20px 0;
   }
   @include mobile {
     padding: 75px 21px 0;

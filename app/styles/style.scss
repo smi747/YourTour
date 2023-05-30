@@ -8,6 +8,11 @@
   align-items: $align;
   justify-content: $justify;
 }
+@mixin hasCheckedOption() {
+  &:has(option:checked:not(:disabled)) {
+    @content;
+  }
+}
 
 html {
   scroll-behavior: smooth;
@@ -713,8 +718,10 @@ html {
 }
 
 //Сброс цвета в поле выбора направления
-#direction:has(.field__option:checked) {
-  color: #1b1f2b;
+#direction {
+  @include hasCheckedOption() {
+    color: #1b1f2b;
+  }
 }
 //---------------------------------------
 

@@ -13,6 +13,12 @@
     @content;
   }
 }
+@mixin font($fs, $fw, $lh, $ls) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
 
 html {
   scroll-behavior: smooth;
@@ -93,24 +99,17 @@ html {
     width: 768px;
     margin-bottom: 50px;
 
-    font-weight: 700;
-    font-size: 96px;
-    line-height: 109%;
+    @include font(96px, 700, 109%, 0.02em);
     text-align: center;
-    letter-spacing: 0.02em;
-
     @include mobile {
       width: 360px;
       margin-bottom: 40px;
-      font-size: 34px;
-      line-height: 112%;
+      @include font(34px, null, 112%, null);
     }
   }
   &__text {
     margin-bottom: 50px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: $primarylineheight;
+    @include font(20px, 400, $primarylineheight, null);
     text-align: center;
 
     @include desktop {
@@ -122,19 +121,14 @@ html {
     @include mobile {
       width: 310px;
       margin-bottom: 40px;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: $primarylineheight;
+      @include font(16px, 400, $primarylineheight, null);
     }
   }
   &__button {
     padding: 5px 20px;
     border-radius: 10px;
 
-    font-weight: 400;
-    font-size: 17px;
-    line-height: $primarylineheight;
-    letter-spacing: -0.01em;
+    @include font(17px, 400, $primarylineheight, -0.01em);
     background-color: white;
     color: #1b1f2b;
 
@@ -158,9 +152,7 @@ html {
 
   width: 100%;
   height: 88px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: $primarylineheight;
+  @include font(20px, 400, $primarylineheight, null);
 
   @include desktop {
     max-width: 1168px;
@@ -245,15 +237,11 @@ html {
 
 .title {
   color: #1b1f2b;
-  font-weight: 700;
-  font-size: 59px;
-  line-height: 124%;
+  @include font(59px, 700, 124%, null);
   text-align: center;
 
   @include mobile {
-    letter-spacing: 0.02em;
-    font-size: 34px;
-    line-height: 112%;
+    @include font(34px, null, 112%, 0.02em);
   }
 }
 
@@ -305,9 +293,7 @@ html {
   }
 
   &__link {
-    font-weight: 700;
-    font-size: 23px;
-    line-height: 122%;
+    @include font(23px, 700, 122%, null);
     color: #1b1f2b;
 
     border: none;
@@ -315,8 +301,7 @@ html {
     background: transparent;
 
     @include mobile {
-      font-size: 16px;
-      line-height: $primarylineheight;
+      @include font(16px, null, $primarylineheight, null);
     }
 
     &:active {
@@ -378,22 +363,14 @@ html {
     }
   }
   &__name {
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 122%;
+    @include font(35px, 500, 122%, null);
 
     @include mobile {
-      font-weight: 700;
-      font-size: 23px;
-      line-height: 120%;
-      letter-spacing: 0.04em;
+      @include font(23px, 700, 120%, 0.04em);
     }
   }
   &__price {
-    font-weight: 400;
-    font-size: 17px;
-    line-height: $primarylineheight;
-    letter-spacing: -0.01em;
+    @include font(17px, 400, $primarylineheight, -0.01em);
     margin-top: 16px;
 
     @include mobile {
@@ -404,15 +381,12 @@ html {
   &__more {
     display: flex;
     gap: 16px;
-    font-weight: 700;
-    font-size: 23px;
-    line-height: 122%;
+    @include font(23px, 700, 122%, null);
     margin-top: auto;
     align-self: flex-start;
 
     @include mobile {
-      font-size: 16px;
-      line-height: $primarylineheight;
+      @include font(16px, null, $primarylineheight, null);
     }
 
     .tours-card:hover & {
@@ -514,9 +488,7 @@ html {
   margin-bottom: 100px;
 
   color: #a6a6a6;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: $primarylineheight;
+  @include font(20px, 400, $primarylineheight, null);
   text-align: center;
 
   @include mobile {
@@ -576,9 +548,7 @@ html {
     display: flex;
 
     color: #1b1f2b;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: $primarylineheight;
+    @include font(20px, 400, $primarylineheight, null);
 
     @include mobile {
       font-size: 16px;
@@ -593,9 +563,7 @@ html {
     border: 1px solid #f4f0e9;
     border-radius: 10px;
 
-    font-weight: 400;
-    font-size: 20px;
-    line-height: $primarylineheight;
+    @include font(20px, 400, $primarylineheight, null);
     margin-top: 8px;
 
     @include mobile {
@@ -613,9 +581,7 @@ html {
     }
     &::placeholder {
       color: #a6a6a6;
-      font-size: 20px;
-      font-weight: 400;
-      line-height: $primarylineheight;
+      @include font(20px, 400, $primarylineheight, null);
       @include mobile {
         font-size: 16px;
       }
@@ -681,16 +647,13 @@ html {
   }
   &__agreed {
     color: #a6a6a6;
-    font-weight: 400;
-    line-height: $primarylineheight;
+    @include font(null, 400, $primarylineheight, null);
 
     @include desktop {
-      letter-spacing: -0.01em;
-      font-size: 17px;
+      @include font(17px, null, null, -0.01em);
     }
     @include tablet {
-      letter-spacing: -0.01em;
-      font-size: 17px;
+      @include font(17px, null, null, -0.01em);
     }
     @include mobile {
       font-size: 16px;
@@ -839,9 +802,7 @@ html {
 .form__button {
   padding: 15px 0;
   border-radius: 10px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: $primarylineheight;
+  @include font(20px, 400, $primarylineheight, null);
   border: none;
   outline: none;
 
@@ -933,14 +894,11 @@ html {
 
   &__text {
     font-style: normal;
-    font-weight: 700;
-    font-size: 23px;
-    line-height: 122%;
+    @include font(23px, 700, 122%, null);
     color: #1b1f2b;
 
     @include mobile {
-      font-size: 16px;
-      line-height: $primarylineheight;
+      @include font(16px, null, $primarylineheight, null);
     }
   }
   &__foot {
@@ -957,23 +915,15 @@ html {
     gap: 8px;
   }
   &__author {
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 122%;
+    @include font(35px, 500, 122%, null);
     color: #1b1f2b;
 
     @include mobile {
-      font-weight: 700;
-      font-size: 23px;
-      line-height: 120%;
-      letter-spacing: 0.04em;
+      @include font(23px, 700, 120%, 0.04em);
     }
   }
   &__tour {
-    font-weight: 400;
-    font-size: 17px;
-    line-height: $primarylineheight;
-    letter-spacing: -0.01em;
+    @include font(17px, 400, $primarylineheight, -0.01em);
     color: #a6a6a6;
 
     @include mobile {
@@ -1161,25 +1111,18 @@ html {
     margin-top: auto;
   }
   &__name {
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 122%;
+    @include font(35px, 500, 122%, null);
 
     @include mobile {
       width: 140px;
-      font-weight: 700;
-      font-size: 23px;
-      line-height: 120%;
-      letter-spacing: 0.04em;
+      @include font(23px, 700, 120%, 0.04em);
     }
   }
 }
 
 .card-desc {
   width: 554px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: $primarylineheight;
+  @include font(20px, 400, $primarylineheight, null);
 
   @include mobile {
     width: 263px;
@@ -1226,9 +1169,7 @@ html {
     }
   }
   &__link {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: $primarylineheight;
+    @include font(20px, 400, $primarylineheight, null);
     color: #ffffff;
 
     &:active {
@@ -1240,14 +1181,11 @@ html {
   &__more {
     display: flex;
     gap: 16px;
-    font-weight: 700;
-    font-size: 23px;
-    line-height: 122%;
+    @include font(23px, 700, 122%, null);
     color: #ffffff;
 
     @include mobile {
-      font-size: 16px;
-      line-height: $primarylineheight;
+      @include font(16px, null, $primarylineheight, null);
     }
   }
 }
@@ -1319,25 +1257,18 @@ html {
 }
 
 .ending__header {
-  font-weight: 500;
-  font-size: 35px;
-  line-height: 122%;
+  @include font(35px, 500, 122%, null);
   color: #1b1f2b;
 
   @include mobile {
     width: 291px;
     text-align: center;
-    font-weight: 700;
-    font-size: 23px;
-    line-height: 120%;
-    letter-spacing: 0.04em;
+    @include font(23px, 700, 120%, 0.04em);
   }
 }
 
 .ending__text {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: $primarylineheight;
+  @include font(20px, 400, $primarylineheight, null);
   color: #a6a6a6;
 
   @include mobile {
@@ -1390,9 +1321,7 @@ html {
 }
 
 .footer__text {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: $primarylineheight;
+  @include font(20px, 400, $primarylineheight, null);
   color: #a6a6a6;
 
   @include mobile {
@@ -1462,9 +1391,7 @@ html {
 
 .footer__social-name {
   color: black;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: $primarylineheight;
+  @include font(20px, 400, $primarylineheight, null);
 
   @include mobile {
     font-size: 16px;

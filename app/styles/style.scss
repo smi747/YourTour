@@ -153,7 +153,7 @@ html {
       $font-letterspacing-psmall
     );
     background-color: $clr-white;
-    color: #1b1f2b;
+    color: $clr-black;
 
     @include mobile {
       @include font(
@@ -241,14 +241,14 @@ html {
 
   .header__nav {
     margin-bottom: 0;
-    color: #1b1f2b;
+    color: $clr-black;
 
     @include mobile {
       padding: 0 20px;
     }
   }
   .navigation__link {
-    color: #1b1f2b;
+    color: $clr-black;
   }
   .navigation__link:hover {
     text-decoration-color: currentColor;
@@ -257,7 +257,7 @@ html {
     filter: invert(1);
   }
   .navigation__phone {
-    color: #1b1f2b;
+    color: $clr-black;
   }
 }
 //-------------------
@@ -274,7 +274,7 @@ html {
 }
 
 .title {
-  color: #1b1f2b;
+  color: $clr-black;
   @include font(
     $font-size-h2,
     $font-weight-h2,
@@ -347,7 +347,7 @@ html {
       $font-lineheight-pbig,
       $font-letterspacing-pbig
     );
-    color: #1b1f2b;
+    color: $clr-black;
 
     border: none;
     outline: none;
@@ -645,7 +645,7 @@ html {
   &__label {
     display: flex;
 
-    color: #1b1f2b;
+    color: $clr-black;
     @include font(
       $font-size-pnormal,
       $font-weight-pnormal,
@@ -760,11 +760,11 @@ html {
   &__license {
     text-decoration: underline 1px;
     text-decoration-color: transparent;
-    color: #1b1f2b;
+    color: $clr-black;
 
     &:hover {
       text-decoration-color: currentColor;
-      color: #1b1f2b;
+      color: $clr-black;
       transition: all 0.3s ease-out;
     }
     &:active {
@@ -824,7 +824,7 @@ html {
 //Сброс цвета в поле выбора направления
 #direction {
   @include hasCheckedOption() {
-    color: #1b1f2b;
+    color: $clr-black;
   }
 }
 //---------------------------------------
@@ -1055,7 +1055,7 @@ html {
       $font-lineheight-pbig,
       $font-letterspacing-pbig
     );
-    color: #1b1f2b;
+    color: $clr-black;
 
     @include mobile {
       @include font(
@@ -1086,7 +1086,7 @@ html {
       $font-lineheight-h3,
       $font-letterspacing-h3
     );
-    color: #1b1f2b;
+    color: $clr-black;
 
     @include mobile {
       @include font(
@@ -1488,7 +1488,7 @@ html {
     $font-lineheight-h3,
     $font-letterspacing-h3
   );
-  color: #1b1f2b;
+  color: $clr-black;
 
   @include mobile {
     width: $ending__header_mobile-width;

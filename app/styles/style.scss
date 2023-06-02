@@ -27,8 +27,8 @@ html {
 .body {
   font-family: "Roboto";
   font-style: normal;
-  color: white;
-  background-color: #f9f7f4;
+  color: $clr-white;
+  background-color: $clr-beige100;
   min-width: 360px;
 }
 
@@ -127,7 +127,7 @@ html {
     border-radius: 10px;
 
     @include font(17px, 400, $primarylineheight, -0.01em);
-    background-color: white;
+    background-color: $clr-white;
     color: #1b1f2b;
 
     @include mobile {
@@ -135,12 +135,12 @@ html {
     }
 
     &:hover {
-      background-color: $linkactiveclr;
-      color: #ffffff;
+      background-color: $clr-orange200;
+      color: $clr-white;
       transition: all 0.3s ease;
     }
     &:active {
-      background-color: #f8e6be;
+      background-color: $clr-orange100;
     }
   }
 }
@@ -184,10 +184,10 @@ html {
     }
   }
   &__link {
-    color: white;
+    color: $clr-white;
   }
   &__phone {
-    color: white;
+    color: $clr-white;
   }
 }
 
@@ -305,12 +305,12 @@ html {
     &:active {
       text-decoration-color: currentColor;
       transition: all 0.3s ease-out;
-      color: $linkactiveclr;
+      color: $clr-orange200;
     }
     &_active {
       text-decoration: underline 1px;
       text-underline-offset: 6px;
-      color: $linkactiveclr;
+      color: $clr-orange200;
     }
   }
 }
@@ -353,7 +353,7 @@ html {
     top: 0;
     left: 0;
     width: 100%;
-    color: #ffffff;
+    color: $clr-white;
 
     padding: 50px;
     @include mobile {
@@ -388,14 +388,14 @@ html {
     }
 
     .tours-card:hover & {
-      background-color: $linkhoverclr;
+      background-color: $clr-green400;
       border-radius: 50px;
       padding: 7px 20px;
       margin: auto 0 -7px -20px;
       transition: background-color 0.3s ease;
     }
     .tours-card:active & {
-      background-color: $linkactiveclr;
+      background-color: $clr-orange200;
       border-radius: 50px;
       padding: 7px 20px;
       margin: auto 0 -7px -20px;
@@ -485,7 +485,7 @@ html {
   width: $desc-width;
   margin-bottom: 100px;
 
-  color: #a6a6a6;
+  color: $clr-gray300;
   @include font(20px, 400, $primarylineheight, null);
   text-align: center;
 
@@ -504,7 +504,7 @@ html {
 
 .form__fields {
   display: grid;
-  background-color: #ffffff;
+  background-color: $clr-white;
   max-width: 1170px;
   width: 100%;
 
@@ -557,8 +557,8 @@ html {
     width: 100%;
     height: $field__input-height;
     padding: 19px;
-    background: #f9f7f4;
-    border: 1px solid #f4f0e9;
+    background: $clr-beige100;
+    border: 1px solid $clr-beige200;
     border-radius: 10px;
 
     @include font(20px, 400, $primarylineheight, null);
@@ -571,21 +571,21 @@ html {
     }
 
     &:hover {
-      background-color: #f4f0e9;
+      background-color: $clr-beige200;
     }
     &:focus {
-      background-color: #f4f0e9;
-      border: 1px solid #a6a6a6;
+      background-color: $clr-beige200;
+      border: 1px solid $clr-gray300;
     }
     &::placeholder {
-      color: #a6a6a6;
+      color: $clr-gray300;
       @include font(20px, 400, $primarylineheight, null);
       @include mobile {
         font-size: 16px;
       }
     }
     &_where {
-      color: #a6a6a6;
+      color: $clr-gray300;
       appearance: none;
       background-image: url("../images/svg_elements/arrow_down.svg");
       background-repeat: no-repeat;
@@ -608,7 +608,7 @@ html {
     }
   }
   &__option {
-    color: black;
+    color: $clr-black;
   }
   &__radio {
     display: flex;
@@ -638,13 +638,13 @@ html {
       transition: all 0.3s ease-out;
     }
     &:active {
-      color: #286562;
+      color: $clr-green400;
       text-decoration-color: currentColor;
       transition: all 0.3s ease-out;
     }
   }
   &__agreed {
-    color: #a6a6a6;
+    color: $clr-gray300;
     @include font(null, 400, $primarylineheight, null);
 
     @include desktop {
@@ -815,32 +815,32 @@ html {
 
   &_heavy {
     padding: 15px 70.5px;
-    background-color: #286562;
-    color: #ffffff;
+    background-color: $clr-green400;
+    color: $clr-white;
 
     @include mobile {
       padding: 12px 29.5px;
     }
     &:hover {
-      background-color: #3b7e7b;
+      background-color: $clr-green300;
     }
     &:active {
-      background-color: #627f7e;
+      background-color: $clr-green200;
     }
   }
   &_light {
     padding: 15px 72.5px;
-    background-color: #e0f0e5;
-    color: #286562;
+    background-color: $clr-green100;
+    color: $clr-green400;
 
     @include mobile {
       padding: 12px 31px;
     }
     &:hover {
-      background-color: #f1f3f2;
+      background-color: $clr-gray100;
     }
     &:active {
-      background-color: #d9dfdb;
+      background-color: $clr-gray200;
     }
   }
 }
@@ -880,7 +880,7 @@ html {
   flex-basis: 50%;
   justify-content: space-between;
   flex-direction: column;
-  background: #f4f0e9;
+  background: $clr-beige200;
 
   padding: 40px;
   border-radius: 50px;
@@ -926,7 +926,7 @@ html {
   }
   &__tour {
     @include font(17px, 400, $primarylineheight, -0.01em);
-    color: #a6a6a6;
+    color: $clr-gray300;
 
     @include mobile {
       font-size: 16px;
@@ -1102,7 +1102,7 @@ html {
     top: 0;
     left: 0;
     width: 100%;
-    color: #ffffff;
+    color: $clr-white;
 
     padding: 60px;
     @include mobile {
@@ -1172,10 +1172,10 @@ html {
   }
   &__link {
     @include font(20px, 400, $primarylineheight, null);
-    color: #ffffff;
+    color: $clr-white;
 
     &:active {
-      color: $linkactiveclr;
+      color: $clr-orange200;
       text-decoration-color: currentColor;
       transition: all 0.3s ease-out;
     }
@@ -1184,7 +1184,7 @@ html {
     display: flex;
     gap: 16px;
     @include font(23px, 700, 122%, null);
-    color: #ffffff;
+    color: $clr-white;
 
     @include mobile {
       @include font(16px, null, $primarylineheight, null);
@@ -1195,14 +1195,14 @@ html {
 //Фон для "Подробнее" при наведении на карточку с туром
 .cardfooter__more {
   .stories-card__pictureblock:hover ~ .stories-card__info & {
-    background-color: $linkhoverclr;
+    background-color: $clr-green400;
     border-radius: 50px;
     padding: 7px 20px;
     margin: 0 0 -7px -20px;
     transition: background-color 0.3s ease;
   }
   .stories-card__pictureblock:active ~ .stories-card__info & {
-    background-color: $linkactiveclr;
+    background-color: $clr-orange200;
     border-radius: 50px;
     padding: 7px 20px;
     margin: 0 0 -7px -20px;
@@ -1271,7 +1271,7 @@ html {
 
 .ending__text {
   @include font(20px, 400, $primarylineheight, null);
-  color: #a6a6a6;
+  color: $clr-gray300;
 
   @include mobile {
     text-align: center;
@@ -1282,14 +1282,14 @@ html {
 .ending__mail {
   text-decoration: underline 1px;
   text-decoration-color: transparent;
-  color: black;
+  color: $clr-black;
 
   &:hover {
     transition: all 0.3s ease-out;
     text-decoration-color: currentColor;
   }
   &:active {
-    color: #286562;
+    color: $clr-green400;
     transition: all 0.3s ease-out;
     text-decoration-color: currentColor;
   }
@@ -1306,7 +1306,7 @@ html {
 }
 
 .footer {
-  background-color: #f4f0e9;
+  background-color: $clr-beige200;
 }
 
 .footer__block {
@@ -1324,7 +1324,7 @@ html {
 
 .footer__text {
   @include font(20px, 400, $primarylineheight, null);
-  color: #a6a6a6;
+  color: $clr-gray300;
 
   @include mobile {
     font-size: 16px;
@@ -1392,7 +1392,7 @@ html {
 }
 
 .footer__social-name {
-  color: black;
+  color: $clr-black;
   @include font(20px, 400, $primarylineheight, null);
 
   @include mobile {

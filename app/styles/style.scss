@@ -99,17 +99,32 @@ html {
     width: $header__title-width;
     margin-bottom: 50px;
 
-    @include font(96px, 700, 109%, 0.02em);
+    @include font(
+      $font-size-h1,
+      $font-weight-h1,
+      $font-lineheight-h1,
+      $font-letterspacing-h1
+    );
     text-align: center;
     @include mobile {
       width: $header__title_mobile-width;
       margin-bottom: 40px;
-      @include font(34px, null, 112%, null);
+      @include font(
+        $font-size-h1-mobile,
+        $font-weight-h1-mobile,
+        $font-lineheight-h1-mobile,
+        $font-letterspacing-h1-mobile
+      );
     }
   }
   &__text {
     margin-bottom: 50px;
-    @include font(20px, 400, $primarylineheight, null);
+    @include font(
+      $font-size-pnormal,
+      $font-weight-pnormal,
+      $font-lineheight-pnormal,
+      $font-letterspacing-pnormal
+    );
     text-align: center;
     width: 562px;
 
@@ -119,19 +134,34 @@ html {
     @include mobile {
       width: $header__text_mobile-width;
       margin-bottom: 40px;
-      @include font(16px, 400, $primarylineheight, null);
+      @include font(
+        $font-size-pnormal-mobile,
+        $font-weight-pnormal-mobile,
+        $font-lineheight-pnormal-mobile,
+        $font-letterspacing-pnormal-mobile
+      );
     }
   }
   &__button {
     padding: 5px 20px;
     border-radius: 10px;
 
-    @include font(17px, 400, $primarylineheight, -0.01em);
+    @include font(
+      $font-size-psmall,
+      $font-weight-psmall,
+      $font-lineheight-psmall,
+      $font-letterspacing-psmall
+    );
     background-color: $clr-white;
     color: #1b1f2b;
 
     @include mobile {
-      font-size: 16px;
+      @include font(
+        $font-size-psmall-mobile,
+        $font-weight-psmall-mobile,
+        $font-lineheight-psmall-mobile,
+        $font-letterspacing-psmall-mobile
+      );
     }
 
     &:hover {
@@ -150,7 +180,12 @@ html {
 
   width: 100%;
   height: $navigation-height;
-  @include font(20px, 400, $primarylineheight, null);
+  @include font(
+    $font-size-pnormal,
+    $font-weight-pnormal,
+    $font-lineheight-pnormal,
+    $font-letterspacing-pnormal
+  );
 
   @include desktop {
     max-width: 1168px;
@@ -160,7 +195,12 @@ html {
   }
   @include mobile {
     margin-bottom: 52px;
-    font-size: 16px;
+    @include font(
+      $font-size-pnormal-mobile,
+      $font-weight-pnormal-mobile,
+      $font-lineheight-pnormal-mobile,
+      $font-letterspacing-pnormal-mobile
+    );
   }
 
   &__logo {
@@ -235,11 +275,21 @@ html {
 
 .title {
   color: #1b1f2b;
-  @include font(59px, 700, 124%, null);
+  @include font(
+    $font-size-h2,
+    $font-weight-h2,
+    $font-lineheight-h2,
+    $font-letterspacing-h2
+  );
   text-align: center;
 
   @include mobile {
-    @include font(34px, null, 112%, 0.02em);
+    @include font(
+      $font-size-h2-mobile,
+      $font-weight-h2-mobile,
+      $font-lineheight-h2-mobile,
+      $font-letterspacing-h2-mobile
+    );
   }
 }
 
@@ -273,7 +323,7 @@ html {
       gap: 18px;
     }
     @include mobile {
-      width: $tours__list_mobile-width;
+      min-width: $tours__list_mobile-width;
       gap: 18px;
     }
   }
@@ -291,7 +341,12 @@ html {
   }
 
   &__link {
-    @include font(23px, 700, 122%, null);
+    @include font(
+      $font-size-pbig,
+      $font-weight-pbig,
+      $font-lineheight-pbig,
+      $font-letterspacing-pbig
+    );
     color: #1b1f2b;
 
     border: none;
@@ -299,7 +354,12 @@ html {
     background: transparent;
 
     @include mobile {
-      @include font(16px, null, $primarylineheight, null);
+      @include font(
+        $font-size-pbig-mobile,
+        $font-weight-pbig-mobile,
+        $font-lineheight-pbig-mobile,
+        $font-letterspacing-pbig-mobile
+      );
     }
 
     &:active {
@@ -361,30 +421,60 @@ html {
     }
   }
   &__name {
-    @include font(35px, 500, 122%, null);
+    @include font(
+      $font-size-h3,
+      $font-weight-h3,
+      $font-lineheight-h3,
+      $font-letterspacing-h3
+    );
 
     @include mobile {
-      @include font(23px, 700, 120%, 0.04em);
+      @include font(
+        $font-size-h3-mobile,
+        $font-weight-h3-mobile,
+        $font-lineheight-h3-mobile,
+        0.04em
+      );
     }
   }
   &__price {
-    @include font(17px, 400, $primarylineheight, -0.01em);
+    @include font(
+      $font-size-psmall,
+      $font-weight-psmall,
+      $font-lineheight-psmall,
+      $font-letterspacing-psmall
+    );
     margin-top: 16px;
 
     @include mobile {
-      font-size: 16px;
+      @include font(
+        $font-size-psmall-mobile,
+        $font-weight-psmall-mobile,
+        $font-lineheight-psmall-mobile,
+        $font-letterspacing-psmall-mobile
+      );
       margin-top: 13px;
     }
   }
   &__more {
     display: flex;
     gap: 16px;
-    @include font(23px, 700, 122%, null);
+    @include font(
+      $font-size-pbig,
+      $font-weight-pbig,
+      $font-lineheight-pbig,
+      $font-letterspacing-pbig
+    );
     margin-top: auto;
     align-self: flex-start;
 
     @include mobile {
-      @include font(16px, null, $primarylineheight, null);
+      @include font(
+        $font-size-pbig-mobile,
+        $font-weight-pbig-mobile,
+        $font-lineheight-pbig-mobile,
+        $font-letterspacing-pbig-mobile
+      );
     }
 
     .tours-card:hover & {
@@ -486,12 +576,22 @@ html {
   margin-bottom: 100px;
 
   color: $clr-gray300;
-  @include font(20px, 400, $primarylineheight, null);
+  @include font(
+    $font-size-pnormal,
+    $font-weight-pnormal,
+    $font-lineheight-pnormal,
+    $font-letterspacing-pnormal
+  );
   text-align: center;
 
   @include mobile {
     width: $desc_mobile-width;
-    font-size: 16px;
+    @include font(
+      $font-size-pnormal-mobile,
+      $font-weight-pnormal-mobile,
+      $font-lineheight-pnormal-mobile,
+      $font-letterspacing-pnormal-mobile
+    );
     margin-bottom: 50px;
   }
 }
@@ -546,10 +646,20 @@ html {
     display: flex;
 
     color: #1b1f2b;
-    @include font(20px, 400, $primarylineheight, null);
+    @include font(
+      $font-size-pnormal,
+      $font-weight-pnormal,
+      $font-lineheight-pnormal,
+      $font-letterspacing-pnormal
+    );
 
     @include mobile {
-      font-size: 16px;
+      @include font(
+        $font-size-pnormal-mobile,
+        $font-weight-pnormal-mobile,
+        $font-lineheight-pnormal-mobile,
+        $font-letterspacing-pnormal-mobile
+      );
     }
   }
   &__input {
@@ -561,11 +671,21 @@ html {
     border: 1px solid $clr-beige200;
     border-radius: 10px;
 
-    @include font(20px, 400, $primarylineheight, null);
+    @include font(
+      $font-size-pnormal,
+      $font-weight-pnormal,
+      $font-lineheight-pnormal,
+      $font-letterspacing-pnormal
+    );
     margin-top: 8px;
 
     @include mobile {
-      font-size: 16px;
+      @include font(
+        $font-size-pnormal-mobile,
+        $font-weight-pnormal-mobile,
+        $font-lineheight-pnormal-mobile,
+        $font-letterspacing-pnormal-mobile
+      );
       padding: 9px;
       height: $field__input_mobile-height;
     }
@@ -579,9 +699,19 @@ html {
     }
     &::placeholder {
       color: $clr-gray300;
-      @include font(20px, 400, $primarylineheight, null);
+      @include font(
+        $font-size-pnormal,
+        $font-weight-pnormal,
+        $font-lineheight-pnormal,
+        $font-letterspacing-pnormal
+      );
       @include mobile {
-        font-size: 16px;
+        @include font(
+          $font-size-pnormal-mobile,
+          $font-weight-pnormal-mobile,
+          $font-lineheight-pnormal-mobile,
+          $font-letterspacing-pnormal-mobile
+        );
       }
     }
     &_where {
@@ -645,16 +775,29 @@ html {
   }
   &__agreed {
     color: $clr-gray300;
-    @include font(null, 400, $primarylineheight, null);
-
     @include desktop {
-      @include font(17px, null, null, -0.01em);
+      @include font(
+        $font-size-psmall,
+        $font-weight-psmall,
+        $font-lineheight-psmall,
+        $font-letterspacing-psmall
+      );
     }
     @include tablet {
-      @include font(17px, null, null, -0.01em);
+      @include font(
+        $font-size-psmall,
+        $font-weight-psmall,
+        $font-lineheight-psmall,
+        $font-letterspacing-psmall
+      );
     }
     @include mobile {
-      font-size: 16px;
+      @include font(
+        $font-size-psmall-mobile,
+        $font-weight-psmall-mobile,
+        $font-lineheight-psmall-mobile,
+        normal
+      );
     }
   }
   &__checkbox {
@@ -804,13 +947,23 @@ html {
 .form__button {
   padding: 15px 0;
   border-radius: 10px;
-  @include font(20px, 400, $primarylineheight, null);
+  @include font(
+    $font-size-pnormal,
+    $font-weight-pnormal,
+    $font-lineheight-pnormal,
+    $font-letterspacing-pnormal
+  );
   border: none;
   outline: none;
 
   @include mobile {
     padding: 12px 0;
-    font-size: 16px;
+    @include font(
+      $font-size-pnormal-mobile,
+      $font-weight-pnormal-mobile,
+      $font-lineheight-pnormal-mobile,
+      $font-letterspacing-pnormal-mobile
+    );
   }
 
   &_heavy {
@@ -896,11 +1049,21 @@ html {
 
   &__text {
     font-style: normal;
-    @include font(23px, 700, 122%, null);
+    @include font(
+      $font-size-pbig,
+      $font-weight-pbig,
+      $font-lineheight-pbig,
+      $font-letterspacing-pbig
+    );
     color: #1b1f2b;
 
     @include mobile {
-      @include font(16px, null, $primarylineheight, null);
+      @include font(
+        $font-size-pbig-mobile,
+        $font-weight-pbig-mobile,
+        $font-lineheight-pbig-mobile,
+        $font-letterspacing-pbig-mobile
+      );
     }
   }
   &__foot {
@@ -917,19 +1080,39 @@ html {
     gap: 8px;
   }
   &__author {
-    @include font(35px, 500, 122%, null);
+    @include font(
+      $font-size-h3,
+      $font-weight-h3,
+      $font-lineheight-h3,
+      $font-letterspacing-h3
+    );
     color: #1b1f2b;
 
     @include mobile {
-      @include font(23px, 700, 120%, 0.04em);
+      @include font(
+        $font-size-h3-mobile,
+        $font-weight-h3-mobile,
+        $font-lineheight-h3-mobile,
+        $font-letterspacing-h3-mobile
+      );
     }
   }
   &__tour {
-    @include font(17px, 400, $primarylineheight, -0.01em);
+    @include font(
+      $font-size-psmall,
+      $font-weight-psmall,
+      $font-lineheight-psmall,
+      $font-letterspacing-psmall
+    );
     color: $clr-gray300;
 
     @include mobile {
-      font-size: 16px;
+      @include font(
+        $font-size-psmall-mobile,
+        $font-weight-psmall-mobile,
+        $font-lineheight-psmall-mobile,
+        $font-letterspacing-psmall-mobile
+      );
     }
   }
   &__picture {
@@ -1113,22 +1296,42 @@ html {
     margin-top: auto;
   }
   &__name {
-    @include font(35px, 500, 122%, null);
+    @include font(
+      $font-size-h3,
+      $font-weight-h3,
+      $font-lineheight-h3,
+      $font-letterspacing-h3
+    );
 
     @include mobile {
       width: $stories-card__name-width;
-      @include font(23px, 700, 120%, 0.04em);
+      @include font(
+        $font-size-h3-mobile,
+        $font-weight-h3-mobile,
+        $font-lineheight-h3-mobile,
+        $font-letterspacing-h3-mobile
+      );
     }
   }
 }
 
 .card-desc {
   width: $card-desc;
-  @include font(20px, 400, $primarylineheight, null);
+  @include font(
+    $font-size-pnormal,
+    $font-weight-pnormal,
+    $font-lineheight-pnormal,
+    $font-letterspacing-pnormal
+  );
 
   @include mobile {
     width: $card-desc_mobile;
-    font-size: 16px;
+    @include font(
+      $font-size-pnormal-mobile,
+      $font-weight-pnormal-mobile,
+      $font-lineheight-pnormal-mobile,
+      $font-letterspacing-pnormal-mobile
+    );
   }
   &__ul {
     list-style-type: disc;
@@ -1138,7 +1341,12 @@ html {
 
     @include mobile {
       margin: 0 0 0 9px;
-      line-height: $primarylineheight;
+      @include font(
+        $font-size-pnormal-mobile,
+        $font-weight-pnormal-mobile,
+        $font-lineheight-pnormal-mobile,
+        $font-letterspacing-pnormal-mobile
+      );
     }
   }
   &__li {
@@ -1171,7 +1379,12 @@ html {
     }
   }
   &__link {
-    @include font(20px, 400, $primarylineheight, null);
+    @include font(
+      $font-size-pnormal,
+      $font-weight-pnormal,
+      $font-lineheight-pnormal,
+      $font-letterspacing-pnormal
+    );
     color: $clr-white;
 
     &:active {
@@ -1183,11 +1396,21 @@ html {
   &__more {
     display: flex;
     gap: 16px;
-    @include font(23px, 700, 122%, null);
+    @include font(
+      $font-size-pbig,
+      $font-weight-pbig,
+      $font-lineheight-pbig,
+      $font-letterspacing-pbig
+    );
     color: $clr-white;
 
     @include mobile {
-      @include font(16px, null, $primarylineheight, null);
+      @include font(
+        $font-size-pbig-mobile,
+        $font-weight-pbig-mobile,
+        $font-lineheight-pbig-mobile,
+        $font-letterspacing-pbig-mobile
+      );
     }
   }
 }
@@ -1259,23 +1482,43 @@ html {
 }
 
 .ending__header {
-  @include font(35px, 500, 122%, null);
+  @include font(
+    $font-size-h3,
+    $font-weight-h3,
+    $font-lineheight-h3,
+    $font-letterspacing-h3
+  );
   color: #1b1f2b;
 
   @include mobile {
     width: $ending__header_mobile-width;
     text-align: center;
-    @include font(23px, 700, 120%, 0.04em);
+    @include font(
+      $font-size-h3-mobile,
+      $font-weight-h3-mobile,
+      $font-lineheight-h3-mobile,
+      $font-letterspacing-h3-mobile
+    );
   }
 }
 
 .ending__text {
-  @include font(20px, 400, $primarylineheight, null);
+  @include font(
+    $font-size-pnormal,
+    $font-weight-pnormal,
+    $font-lineheight-pnormal,
+    $font-letterspacing-pnormal
+  );
   color: $clr-gray300;
 
   @include mobile {
     text-align: center;
-    font-size: 16px;
+    @include font(
+      $font-size-pnormal-mobile,
+      $font-weight-pnormal-mobile,
+      $font-lineheight-pnormal-mobile,
+      $font-letterspacing-pnormal-mobile
+    );
   }
 }
 
@@ -1323,11 +1566,21 @@ html {
 }
 
 .footer__text {
-  @include font(20px, 400, $primarylineheight, null);
+  @include font(
+    $font-size-pnormal,
+    $font-weight-pnormal,
+    $font-lineheight-pnormal,
+    $font-letterspacing-pnormal
+  );
   color: $clr-gray300;
 
   @include mobile {
-    font-size: 16px;
+    @include font(
+      $font-size-pnormal-mobile,
+      $font-weight-pnormal-mobile,
+      $font-lineheight-pnormal-mobile,
+      $font-letterspacing-pnormal-mobile
+    );
   }
 }
 
@@ -1393,9 +1646,19 @@ html {
 
 .footer__social-name {
   color: $clr-black;
-  @include font(20px, 400, $primarylineheight, null);
+  @include font(
+    $font-size-pnormal,
+    $font-weight-pnormal,
+    $font-lineheight-pnormal,
+    $font-letterspacing-pnormal
+  );
 
   @include mobile {
-    font-size: 16px;
+    @include font(
+      $font-size-pnormal-mobile,
+      $font-weight-pnormal-mobile,
+      $font-lineheight-pnormal-mobile,
+      $font-letterspacing-pnormal-mobile
+    );
   }
 }

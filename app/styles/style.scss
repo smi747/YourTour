@@ -38,16 +38,16 @@ html {
 }
 
 .body__header {
-  padding: 0 57px;
+  padding: 0 $header-sidepadding;
 
   @include mobile {
-    padding: 0 20px;
+    padding: 0 $header-sidepadding-mobile;
   }
 }
 
 .header {
   @include flex(column, center, null);
-  height: 831px;
+  height: $header-height;
 
   background-position: top center;
   background-size: cover;
@@ -67,7 +67,7 @@ html {
       url(../images/header_section/header-background-small.jpg);
   }
   @include mobile {
-    height: 488px;
+    height: $header-height-nobile;
     background-image: linear-gradient(
         180deg,
         rgba(0, 0, 0, 0.4) 0%,
@@ -293,9 +293,9 @@ html {
 }
 
 .body__tours {
-  padding-top: 135px;
+  padding-top: $tours-toppadding;
   @include mobile {
-    padding: 75px 21px 0;
+    padding: $tours-toppadding-mobile $tours-sidepadding-mobile 0;
   }
 }
 
@@ -526,10 +526,10 @@ html {
 }
 
 .body__form {
-  padding: 135px 53px 0;
+  padding: $form-toppadding $form-sidepadding 0;
 
   @include mobile {
-    padding: 75px 21px 0;
+    padding: $form-toppadding-mobile $form-sidepadding-mobile 0;
   }
 }
 
@@ -994,10 +994,10 @@ html {
 }
 
 .body__feedback {
-  padding-top: 135px;
+  padding-top: $feedback-toppadding;
 
   @include mobile {
-    padding: 75px 21px 0;
+    padding: $feedback-toppadding-mobile $feedback-sidepadding-mobile 0;
   }
 }
 
@@ -1116,14 +1116,14 @@ html {
 }
 
 .body__photos {
-  padding: 135px 29px 0;
+  padding: $photos-toppadding $photos-sidepadding 0;
 
   @include tablet {
-    padding: 135px 20px 0;
+    padding: $photos-toppadding-tablet $photos-sidepadding-tablet 0;
   }
 
   @include mobile {
-    padding: 75px 21px 0;
+    padding: $photos-toppadding-mobile $photos-sidepadding-mobile 0;
   }
 }
 
@@ -1203,14 +1203,14 @@ html {
 }
 
 .body__stories {
-  padding: 135px 29px 0;
+  padding: $stories-toppadding $stories-sidepadding 0;
 
   @include tablet {
-    padding: 135px 20px 0;
+    padding: $stories-toppadding-tablet $stories-sidepadding-tablet 0;
   }
 
   @include mobile {
-    padding: 75px 21px 0;
+    padding: $stories-toppadding-mobile $stories-sidepadding-mobile 0;
   }
 }
 
@@ -1429,13 +1429,13 @@ html {
 //-------------------------------------------------------------
 
 .body__ending {
-  padding: 135px 29px 0;
+  padding: $ending-toppadding $ending-sidepadding 0;
 
   @include tablet {
-    padding: 135px 20px 0;
+    padding: $ending-toppadding-tablet $ending-sidepadding-tablet 0;
   }
   @include mobile {
-    padding: 75px 21px 0;
+    padding: $ending-toppadding-mobile $ending-sidepadding-mobile 0;
   }
 }
 
@@ -1534,12 +1534,12 @@ html {
 }
 
 .body__footer {
-  margin-top: 135px;
-  padding: 30px 53px;
+  margin-top: $footer-topmargin;
+  padding: 30px $form-sidepadding;
 
   @include mobile {
     padding: 21px 0;
-    margin-top: 75px;
+    margin-top: $footer-topmargin-mobile;
   }
 }
 

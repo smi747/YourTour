@@ -47,7 +47,7 @@ html {
 
 .header {
   @include flex(column, center, null);
-  height: $header-height;
+  height: 831px;
 
   background-position: top center;
   background-size: cover;
@@ -67,7 +67,7 @@ html {
       url(../images/header_section/header-background-small.jpg);
   }
   @include mobile {
-    height: $header_mobile-height;
+    height: 488px;
     background-image: linear-gradient(
         180deg,
         rgba(0, 0, 0, 0.4) 0%,
@@ -79,7 +79,7 @@ html {
 
   &__space {
     display: none;
-    height: $header__space-height;
+    height: 88px;
     margin-bottom: 119px;
 
     @include mobile {
@@ -96,7 +96,7 @@ html {
     margin-bottom: 119px;
   }
   &__title {
-    width: $header__title-width;
+    width: 768px;
     margin-bottom: 50px;
 
     @include font(
@@ -107,7 +107,7 @@ html {
     );
     text-align: center;
     @include mobile {
-      width: $header__title_mobile-width;
+      width: 360px;
       margin-bottom: 40px;
       @include font(
         $font-size-h1-mobile,
@@ -129,10 +129,10 @@ html {
     width: 562px;
 
     @include tablet {
-      width: $header__text_tablet-width;
+      width: 442px;
     }
     @include mobile {
-      width: $header__text_mobile-width;
+      width: 310px;
       margin-bottom: 40px;
       @include font(
         $font-size-pnormal-mobile,
@@ -179,7 +179,7 @@ html {
   @include flex(null, center, space-between);
 
   width: 100%;
-  height: $navigation-height;
+  height: 88px;
   @include font(
     $font-size-pnormal,
     $font-weight-pnormal,
@@ -207,7 +207,7 @@ html {
     width: auto;
 
     @include mobile {
-      width: $navigation__logo_mobile-width;
+      width: 133px;
     }
   }
   &__list {
@@ -315,15 +315,15 @@ html {
     flex-wrap: wrap;
 
     @include desktop {
-      width: $tours__list-width;
+      width: 1170px;
       gap: 30px;
     }
     @include tablet {
-      width: $tours__list_tablet-width;
+      width: 918px;
       gap: 18px;
     }
     @include mobile {
-      min-width: $tours__list_mobile-width;
+      min-width: 318px;
       gap: 18px;
     }
   }
@@ -377,15 +377,15 @@ html {
 
 .tours-card {
   position: relative;
-  width: $tours-card-width;
-  height: $tours-card-height;
+  width: 370px;
+  height: 531px;
 
   @include tablet {
-    width: $tours-card_tablet-width;
+    width: 450px;
   }
   @include mobile {
-    width: $tours-card_mobile-width;
-    height: $tours-card_mobile-height;
+    width: 318px;
+    height: 318px;
   }
 
   &:hover &__picture {
@@ -572,7 +572,7 @@ html {
 }
 
 .desc {
-  width: $desc-width;
+  width: 418px;
   margin-bottom: 100px;
 
   color: $clr-gray300;
@@ -585,7 +585,7 @@ html {
   text-align: center;
 
   @include mobile {
-    width: $desc_mobile-width;
+    width: 318px;
     @include font(
       $font-size-pnormal-mobile,
       $font-weight-pnormal-mobile,
@@ -665,7 +665,7 @@ html {
   &__input {
     box-sizing: border-box;
     width: 100%;
-    height: $field__input-height;
+    height: 68px;
     padding: 19px;
     background: $clr-beige100;
     border: 1px solid $clr-beige200;
@@ -687,7 +687,7 @@ html {
         $font-letterspacing-pnormal-mobile
       );
       padding: 9px;
-      height: $field__input_mobile-height;
+      height: 43px;
     }
 
     &:hover {
@@ -723,17 +723,17 @@ html {
 
       @include mobile {
         padding: 10.5px 9px;
-        height: $field__input_where_mobile-height;
+        height: 46px;
         background-position: right 14px top 50%;
       }
     }
     &_area {
-      height: $field__input_area-height;
+      height: 152px;
       resize: none;
       vertical-align: top;
 
       @include mobile {
-        height: $field__input_area_mobile-height;
+        height: 132px;
       }
     }
   }
@@ -747,14 +747,14 @@ html {
     margin-top: 8px;
   }
   &__radiocircle {
-    width: $field__radiocircle-size;
-    height: $field__radiocircle-size;
+    width: 26px;
+    height: 26px;
     vertical-align: top;
     margin: 0 11px 0 0;
 
     @include mobile {
-      width: $field__radiocircle_mobile-size;
-      height: $field__radiocircle_mobile-size;
+      width: 20px;
+      height: 20px;
     }
   }
   &__license {
@@ -801,8 +801,8 @@ html {
     }
   }
   &__checkbox {
-    width: $field__checkbox-size;
-    height: $field__checkbox-size;
+    width: 26px;
+    height: 26px;
     flex-shrink: 0;
     vertical-align: top;
     margin: 0;
@@ -815,8 +815,8 @@ html {
     }
     @include mobile {
       margin-right: 10px;
-      width: $field__checkbox_mobile-size;
-      height: $field__checkbox_mobile-size;
+      width: 20px;
+      height: 20px;
     }
   }
 }
@@ -848,21 +848,20 @@ html {
   }
   & + label::before {
     content: "";
-    width: $field__radiocircle-size;
-    height: $field__radiocircle-size;
+    width: 26px;
+    height: 26px;
     background-image: url("../images/svg_elements/radio.svg");
     background-repeat: no-repeat;
     background-position: center center;
 
     @include mobile {
-      width: $field__radiocircle_mobile-size;
-      height: $field__radiocircle_mobile-size;
-      background-size: $field__radiocircle_mobile-size
-        $field__radiocircle_mobile-size;
+      width: 20px;
+      height: 20px;
+      background-size: 20px 20px;
     }
   }
   &:checked + label::before {
-    background-size: $field__radiocircle-size $field__radiocircle-size, auto;
+    background-size: 26px 26px, auto;
     background-position: center center, center center;
     background-image: url("../images/svg_elements/radio.svg"),
       url("../images/svg_elements/circle.svg");
@@ -870,9 +869,7 @@ html {
     @include mobile {
       background-image: url("../images/svg_elements/radio.svg"),
         url("../images/svg_elements/circle.svg");
-      background-size: $field__radiocircle_mobile-size
-          $field__radiocircle_mobile-size,
-        9.23px 9.23px;
+      background-size: 20px 20px, 9.23px 9.23px;
     }
   }
 }
@@ -899,20 +896,20 @@ html {
   }
   & + label::before {
     content: "";
-    width: $field__checkbox-size;
-    height: $field__checkbox-size;
+    width: 26px;
+    height: 26px;
     background-image: url("../images/svg_elements/checkbox.svg");
     background-repeat: no-repeat;
     background-position: center center;
 
     @include mobile {
-      width: $field__checkbox_mobile-size;
-      height: $field__checkbox_mobile-size;
-      background-size: $field__checkbox_mobile-size $field__checkbox_mobile-size;
+      width: 20px;
+      height: 20px;
+      background-size: 20px 20px;
     }
   }
   &:checked + label::before {
-    background-size: $field__checkbox-size $field__checkbox-size, auto;
+    background-size: 26px 26px, auto;
     background-position: center center, center center;
     background-image: url("../images/svg_elements/checkbox.svg"),
       url("../images/svg_elements/checked.svg");
@@ -920,8 +917,7 @@ html {
     @include mobile {
       background-image: url("../images/svg_elements/checkbox.svg"),
         url("../images/svg_elements/checked_small.svg");
-      background-size: $field__checkbox_mobile-size $field__checkbox_mobile-size,
-        auto;
+      background-size: 20px 20px, auto;
     }
   }
 }
@@ -1013,11 +1009,11 @@ html {
     display: flex;
 
     @include desktop {
-      width: $feedback__list_desktop-width;
+      width: 1170px;
       gap: 30px;
     }
     @include tablet {
-      width: $feedback__list_tablet-width;
+      width: 918px;
       gap: 18px;
     }
     @include mobile {
@@ -1185,11 +1181,11 @@ html {
   object-fit: cover;
   max-width: 100%;
 
-  height: $photos-card-height;
+  height: 301px;
   border-radius: 50px;
 
   @include mobile {
-    height: $photos-card_mobile-height;
+    height: 110px;
     border-radius: 20px;
   }
   &_hidden-m {
@@ -1226,15 +1222,15 @@ html {
     @include flex(column, center, null);
 
     @include desktop {
-      width: $stories__list-width;
+      width: 1170px;
       gap: 50px;
     }
     @include tablet {
-      width: $stories__list_tablet-width;
+      width: 918px;
       gap: 50px;
     }
     @include mobile {
-      min-width: $stories__list_mobile-width;
+      min-width: 318px;
       gap: 20px;
     }
   }
@@ -1243,15 +1239,15 @@ html {
 .stories-card {
   display: block;
   position: relative;
-  width: $stories-card-width;
-  height: $stories-card-height;
+  width: 1170px;
+  height: 567px;
 
   @include tablet {
-    width: $stories-card_tablet-width;
+    width: 918px;
   }
   @include mobile {
-    width: $stories-card_mobile-width;
-    height: $stories-card_mobile-height;
+    width: 318px;
+    height: 455px;
   }
   &__pictureblock {
     &::after {
@@ -1304,7 +1300,7 @@ html {
     );
 
     @include mobile {
-      width: $stories-card__name-width;
+      width: 140px;
       @include font(
         $font-size-h3-mobile,
         $font-weight-h3-mobile,
@@ -1316,7 +1312,7 @@ html {
 }
 
 .card-desc {
-  width: $card-desc;
+  width: 554px;
   @include font(
     $font-size-pnormal,
     $font-weight-pnormal,
@@ -1325,7 +1321,7 @@ html {
   );
 
   @include mobile {
-    width: $card-desc_mobile;
+    width: 263px;
     @include font(
       $font-size-pnormal-mobile,
       $font-weight-pnormal-mobile,
@@ -1367,7 +1363,7 @@ html {
   @include flex(null, baseline, space-between);
 
   &__arrow {
-    width: $cardfootter__arrow-width;
+    width: 22px;
   }
   &__socials {
     pointer-events: all;
@@ -1460,8 +1456,8 @@ html {
   border-radius: 50px;
   @include mobile {
     border-radius: 20px;
-    width: $ending__pictureblock_mobile-width;
-    height: $ending__pictureblock_mobile-height;
+    width: 130px;
+    height: 133px;
   }
 }
 
@@ -1474,7 +1470,7 @@ html {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: $ending__block-width;
+  width: 371px;
 
   @include mobile {
     align-items: center;
@@ -1491,7 +1487,7 @@ html {
   color: $clr-black;
 
   @include mobile {
-    width: $ending__header_mobile-width;
+    width: 291px;
     text-align: center;
     @include font(
       $font-size-h3-mobile,
@@ -1614,32 +1610,32 @@ html {
 .footer__social-ico {
   &_vk {
     margin-left: 4px;
-    width: $footer__social-ico_vk-width;
-    height: $footer__social-ico_vk-height;
+    width: 20px;
+    height: 12px;
 
     @include mobile {
-      width: $footer__social-ico_vk_mobile-width;
-      height: $footer__social-ico_vk_mobile-height;
+      width: 15.38px;
+      height: 9.23px;
     }
   }
   &_fb {
     margin-left: 13px;
-    width: $footer__social-ico_fb-width;
-    height: $footer__social-ico_fb-height;
+    width: 8px;
+    height: 17px;
 
     @include mobile {
-      width: $footer__social-ico_fb_mobile-width;
-      height: $footer__social-ico_fb_mobile-height;
+      width: 6.15px;
+      height: 13.08px;
     }
   }
   &_inst {
     margin-left: 10px;
-    width: $footer__social-ico_inst-width;
-    height: $footer__social-ico_inst-height;
+    width: 14px;
+    height: 14px;
 
     @include mobile {
-      width: $footer__social-ico_inst_mobile-width;
-      height: $footer__social-ico_inst_mobile-height;
+      width: 10.77px;
+      height: 10.77px;
     }
   }
 }

@@ -98,14 +98,14 @@ html {
   &__title {
     width: 768px;
     margin-bottom: 50px;
-
+    text-align: center;
     @include font(
       $font-size-h1,
       $font-weight-h1,
       $font-lineheight-h1,
       $font-letterspacing-h1
     );
-    text-align: center;
+
     @include mobile {
       width: 360px;
       margin-bottom: 40px;
@@ -119,14 +119,14 @@ html {
   }
   &__text {
     margin-bottom: 50px;
+    text-align: center;
+    width: 562px;
     @include font(
       $font-size-pnormal,
       $font-weight-pnormal,
       $font-lineheight-pnormal,
       $font-letterspacing-pnormal
     );
-    text-align: center;
-    width: 562px;
 
     @include tablet {
       width: 442px;
@@ -145,15 +145,14 @@ html {
   &__button {
     padding: 5px 20px;
     border-radius: 10px;
-
+    background-color: $clr-white;
+    color: $clr-black;
     @include font(
       $font-size-psmall,
       $font-weight-psmall,
       $font-lineheight-psmall,
       $font-letterspacing-psmall
     );
-    background-color: $clr-white;
-    color: $clr-black;
 
     @include mobile {
       @include font(
@@ -275,13 +274,13 @@ html {
 
 .title {
   color: $clr-black;
+  text-align: center;
   @include font(
     $font-size-h2,
     $font-weight-h2,
     $font-lineheight-h2,
     $font-letterspacing-h2
   );
-  text-align: center;
 
   @include mobile {
     @include font(
@@ -341,17 +340,16 @@ html {
   }
 
   &__link {
+    color: $clr-black;
+    border: none;
+    outline: none;
+    background: transparent;
     @include font(
       $font-size-pbig,
       $font-weight-pbig,
       $font-lineheight-pbig,
       $font-letterspacing-pbig
     );
-    color: $clr-black;
-
-    border: none;
-    outline: none;
-    background: transparent;
 
     @include mobile {
       @include font(
@@ -438,35 +436,35 @@ html {
     }
   }
   &__price {
+    margin-top: 16px;
     @include font(
       $font-size-psmall,
       $font-weight-psmall,
       $font-lineheight-psmall,
       $font-letterspacing-psmall
     );
-    margin-top: 16px;
 
     @include mobile {
+      margin-top: 13px;
       @include font(
         $font-size-psmall-mobile,
         $font-weight-psmall-mobile,
         $font-lineheight-psmall-mobile,
         $font-letterspacing-psmall-mobile
       );
-      margin-top: 13px;
     }
   }
   &__more {
     display: flex;
     gap: 16px;
+    margin-top: auto;
+    align-self: flex-start;
     @include font(
       $font-size-pbig,
       $font-weight-pbig,
       $font-lineheight-pbig,
       $font-letterspacing-pbig
     );
-    margin-top: auto;
-    align-self: flex-start;
 
     @include mobile {
       @include font(
@@ -576,23 +574,23 @@ html {
   margin-bottom: 100px;
 
   color: $clr-gray300;
+  text-align: center;
   @include font(
     $font-size-pnormal,
     $font-weight-pnormal,
     $font-lineheight-pnormal,
     $font-letterspacing-pnormal
   );
-  text-align: center;
 
   @include mobile {
     width: 318px;
+    margin-bottom: 50px;
     @include font(
       $font-size-pnormal-mobile,
       $font-weight-pnormal-mobile,
       $font-lineheight-pnormal-mobile,
       $font-letterspacing-pnormal-mobile
     );
-    margin-bottom: 50px;
   }
 }
 
@@ -670,6 +668,7 @@ html {
     background: $clr-beige100;
     border: 1px solid $clr-beige200;
     border-radius: 10px;
+    margin-top: 8px;
 
     @include font(
       $font-size-pnormal,
@@ -677,17 +676,16 @@ html {
       $font-lineheight-pnormal,
       $font-letterspacing-pnormal
     );
-    margin-top: 8px;
 
     @include mobile {
+      padding: 9px;
+      height: 43px;
       @include font(
         $font-size-pnormal-mobile,
         $font-weight-pnormal-mobile,
         $font-lineheight-pnormal-mobile,
         $font-letterspacing-pnormal-mobile
       );
-      padding: 9px;
-      height: 43px;
     }
 
     &:hover {
@@ -705,6 +703,7 @@ html {
         $font-lineheight-pnormal,
         $font-letterspacing-pnormal
       );
+
       @include mobile {
         @include font(
           $font-size-pnormal-mobile,
@@ -943,14 +942,14 @@ html {
 .form__button {
   padding: 15px 0;
   border-radius: 10px;
+  border: none;
+  outline: none;
   @include font(
     $font-size-pnormal,
     $font-weight-pnormal,
     $font-lineheight-pnormal,
     $font-letterspacing-pnormal
   );
-  border: none;
-  outline: none;
 
   @include mobile {
     padding: 12px 0;
@@ -1045,13 +1044,13 @@ html {
 
   &__text {
     font-style: normal;
+    color: $clr-black;
     @include font(
       $font-size-pbig,
       $font-weight-pbig,
       $font-lineheight-pbig,
       $font-letterspacing-pbig
     );
-    color: $clr-black;
 
     @include mobile {
       @include font(
@@ -1076,13 +1075,13 @@ html {
     gap: 8px;
   }
   &__author {
+    color: $clr-black;
     @include font(
       $font-size-h3,
       $font-weight-h3,
       $font-lineheight-h3,
       $font-letterspacing-h3
     );
-    color: $clr-black;
 
     @include mobile {
       @include font(
@@ -1094,13 +1093,13 @@ html {
     }
   }
   &__tour {
+    color: $clr-gray300;
     @include font(
       $font-size-psmall,
       $font-weight-psmall,
       $font-lineheight-psmall,
       $font-letterspacing-psmall
     );
-    color: $clr-gray300;
 
     @include mobile {
       @include font(
@@ -1375,13 +1374,13 @@ html {
     }
   }
   &__link {
+    color: $clr-white;
     @include font(
       $font-size-pnormal,
       $font-weight-pnormal,
       $font-lineheight-pnormal,
       $font-letterspacing-pnormal
     );
-    color: $clr-white;
 
     &:active {
       color: $clr-orange200;
@@ -1392,13 +1391,13 @@ html {
   &__more {
     display: flex;
     gap: 16px;
+    color: $clr-white;
     @include font(
       $font-size-pbig,
       $font-weight-pbig,
       $font-lineheight-pbig,
       $font-letterspacing-pbig
     );
-    color: $clr-white;
 
     @include mobile {
       @include font(
@@ -1478,13 +1477,13 @@ html {
 }
 
 .ending__header {
+  color: $clr-black;
   @include font(
     $font-size-h3,
     $font-weight-h3,
     $font-lineheight-h3,
     $font-letterspacing-h3
   );
-  color: $clr-black;
 
   @include mobile {
     width: 291px;
@@ -1499,13 +1498,13 @@ html {
 }
 
 .ending__text {
+  color: $clr-gray300;
   @include font(
     $font-size-pnormal,
     $font-weight-pnormal,
     $font-lineheight-pnormal,
     $font-letterspacing-pnormal
   );
-  color: $clr-gray300;
 
   @include mobile {
     text-align: center;
@@ -1562,13 +1561,13 @@ html {
 }
 
 .footer__text {
+  color: $clr-gray300;
   @include font(
     $font-size-pnormal,
     $font-weight-pnormal,
     $font-lineheight-pnormal,
     $font-letterspacing-pnormal
   );
-  color: $clr-gray300;
 
   @include mobile {
     @include font(

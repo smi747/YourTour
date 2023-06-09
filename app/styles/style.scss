@@ -238,14 +238,14 @@ html {
   background: rgba(243, 239, 232, 0.6);
   backdrop-filter: blur(27px);
   z-index: 100;
+  padding: 0 57px;
+  @include mobile {
+    padding: 0 20px;
+  }
 
   .header__nav {
     margin-bottom: 0;
     color: $clr-black;
-
-    @include mobile {
-      padding: 0 20px;
-    }
   }
   .navigation__link {
     color: $clr-black;

@@ -52,7 +52,6 @@ html {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  transition: top 1s;
 
   @include desktop {
     background-image: url("../images/header_section/header-background.jpg");
@@ -166,10 +165,12 @@ html {
     &:hover {
       background-color: $clr-orange200;
       color: $clr-white;
-      transition: all 0.3s ease;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
     &:active {
       background-color: $clr-orange100;
+      color: $clr-black;
+      transition: none;
     }
   }
 }
@@ -268,7 +269,7 @@ html {
 
   &:hover {
     text-decoration-color: currentColor;
-    transition: all 0.3s ease-out;
+    transition: text-decoration-color 0.3s ease-out;
   }
 }
 
@@ -362,7 +363,6 @@ html {
 
     &:active {
       text-decoration-color: currentColor;
-      transition: all 0.3s ease-out;
       color: $clr-orange200;
     }
     &_active {
@@ -386,12 +386,13 @@ html {
     height: 318px;
   }
 
-  &:hover &__picture {
-    transform: scale(1.2);
-  }
   &__picture {
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
     width: 100%;
+
+    .tours-card:hover & {
+      transform: scale(1.2);
+    }
   }
   &__pictureblock {
     &::after {
@@ -487,6 +488,7 @@ html {
       border-radius: 50px;
       padding: 7px 20px;
       margin: auto 0 -7px -20px;
+      transition: none;
     }
   }
 }
@@ -763,13 +765,11 @@ html {
 
     &:hover {
       text-decoration-color: currentColor;
-      color: $clr-black;
-      transition: all 0.3s ease-out;
+      transition: text-decoration-color 0.3s ease-out;
     }
     &:active {
       color: $clr-green400;
       text-decoration-color: currentColor;
-      transition: all 0.3s ease-out;
     }
   }
   &__agreed {
@@ -1247,7 +1247,7 @@ html {
   }
   &__picture {
     height: 100%;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
     object-fit: cover;
     .stories-card:hover & {
       transform: scale(1.2);
@@ -1373,7 +1373,6 @@ html {
     &:active {
       color: $clr-orange200;
       text-decoration-color: currentColor;
-      transition: all 0.3s ease-out;
     }
   }
   &__more {
@@ -1412,6 +1411,7 @@ html {
     border-radius: 50px;
     padding: 7px 20px;
     margin: 0 0 -7px -20px;
+    transition: none;
   }
 }
 //-------------------------------------------------------------
@@ -1500,12 +1500,11 @@ html {
   color: $clr-black;
 
   &:hover {
-    transition: all 0.3s ease-out;
+    transition: text-decoration-color 0.3s ease-out;
     text-decoration-color: currentColor;
   }
   &:active {
     color: $clr-green400;
-    transition: all 0.3s ease-out;
     text-decoration-color: currentColor;
   }
 }

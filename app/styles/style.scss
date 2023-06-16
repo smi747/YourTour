@@ -996,7 +996,7 @@ html {
 
 .feedback-element {
   display: flex;
-  width: 450px;
+  width: 570px;
   justify-content: space-between;
   flex-direction: column;
   background: $clr-beige200;
@@ -1005,12 +1005,14 @@ html {
   border-radius: 50px;
   gap: 70px;
 
+  @include tablet {
+    width: 450px;
+  }
   @include mobile {
     padding: 20px;
     border-radius: 20px;
     gap: 40px;
-    max-width: 318px;
-    min-width: 318px;
+    width: 318px;
   }
 
   &__text {

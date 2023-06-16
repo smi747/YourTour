@@ -100,9 +100,9 @@ html {
     text-align: center;
     @include font(
       $font-size-h1,
-      $font-weight-h1,
-      $font-lineheight-h1,
-      $font-letterspacing-h1
+      $font-weight-bold,
+      $font-lineheight-xs,
+      $font-letterspacing-medium
     );
 
     @include mobile {
@@ -110,9 +110,9 @@ html {
       margin-bottom: 40px;
       @include font(
         $font-size-h1-mobile,
-        $font-weight-h1-mobile,
-        $font-lineheight-h1-mobile,
-        $font-letterspacing-h1-mobile
+        $font-weight-bold,
+        $font-lineheight-s,
+        $font-letterspacing-medium
       );
     }
   }
@@ -122,9 +122,9 @@ html {
     width: 562px;
     @include font(
       $font-size-pnormal,
-      $font-weight-pnormal,
-      $font-lineheight-pnormal,
-      $font-letterspacing-pnormal
+      $font-weight-regular,
+      $font-lineheight-xxl,
+      normal
     );
 
     @include tablet {
@@ -135,9 +135,9 @@ html {
       margin-bottom: 40px;
       @include font(
         $font-size-pnormal-mobile,
-        $font-weight-pnormal-mobile,
-        $font-lineheight-pnormal-mobile,
-        $font-letterspacing-pnormal-mobile
+        $font-weight-regular,
+        $font-lineheight-xxl,
+        normal
       );
     }
   }
@@ -148,17 +148,17 @@ html {
     color: $clr-black;
     @include font(
       $font-size-psmall,
-      $font-weight-psmall,
-      $font-lineheight-psmall,
-      $font-letterspacing-psmall
+      $font-weight-regular,
+      $font-lineheight-xxl,
+      $font-letterspacing-small
     );
 
     @include mobile {
       @include font(
         $font-size-psmall-mobile,
-        $font-weight-psmall-mobile,
-        $font-lineheight-psmall-mobile,
-        $font-letterspacing-psmall-mobile
+        $font-weight-regular,
+        $font-lineheight-xxl,
+        $font-letterspacing-small
       );
     }
 
@@ -182,9 +182,9 @@ html {
   height: 88px;
   @include font(
     $font-size-pnormal,
-    $font-weight-pnormal,
-    $font-lineheight-pnormal,
-    $font-letterspacing-pnormal
+    $font-weight-regular,
+    $font-lineheight-xxl,
+    normal
   );
 
   @include desktop {
@@ -197,9 +197,9 @@ html {
     margin-bottom: 52px;
     @include font(
       $font-size-pnormal-mobile,
-      $font-weight-pnormal-mobile,
-      $font-lineheight-pnormal-mobile,
-      $font-letterspacing-pnormal-mobile
+      $font-weight-regular,
+      $font-lineheight-xxl,
+      normal
     );
   }
 
@@ -276,19 +276,14 @@ html {
 .title {
   color: $clr-black;
   text-align: center;
-  @include font(
-    $font-size-h2,
-    $font-weight-h2,
-    $font-lineheight-h2,
-    $font-letterspacing-h2
-  );
+  @include font($font-size-h2, $font-weight-bold, $font-lineheight-xl, normal);
 
   @include mobile {
     @include font(
       $font-size-h2-mobile,
-      $font-weight-h2-mobile,
-      $font-lineheight-h2-mobile,
-      $font-letterspacing-h2-mobile
+      $font-weight-bold,
+      $font-lineheight-s,
+      $font-letterspacing-medium
     );
   }
   &_type_1 {
@@ -354,17 +349,17 @@ html {
     background: transparent;
     @include font(
       $font-size-pbig,
-      $font-weight-pbig,
-      $font-lineheight-pbig,
-      $font-letterspacing-pbig
+      $font-weight-bold,
+      $font-lineheight-l,
+      normal
     );
 
     @include mobile {
       @include font(
         $font-size-pbig-mobile,
-        $font-weight-pbig-mobile,
-        $font-lineheight-pbig-mobile,
-        $font-letterspacing-pbig-mobile
+        $font-weight-bold,
+        $font-lineheight-xxl,
+        normal
       );
     }
 
@@ -429,16 +424,16 @@ html {
   &__name {
     @include font(
       $font-size-h3,
-      $font-weight-h3,
-      $font-lineheight-h3,
-      $font-letterspacing-h3
+      $font-weight-medium,
+      $font-lineheight-l,
+      normal
     );
 
     @include mobile {
       @include font(
         $font-size-h3-mobile,
-        $font-weight-h3-mobile,
-        $font-lineheight-h3-mobile,
+        $font-weight-bold,
+        $font-lineheight-m,
         0.04em
       );
     }
@@ -447,18 +442,18 @@ html {
     margin-top: 16px;
     @include font(
       $font-size-psmall,
-      $font-weight-psmall,
-      $font-lineheight-psmall,
-      $font-letterspacing-psmall
+      $font-weight-regular,
+      $font-lineheight-xxl,
+      $font-letterspacing-small
     );
 
     @include mobile {
       margin-top: 13px;
       @include font(
         $font-size-psmall-mobile,
-        $font-weight-psmall-mobile,
-        $font-lineheight-psmall-mobile,
-        $font-letterspacing-psmall-mobile
+        $font-weight-regular,
+        $font-lineheight-xxl,
+        $font-letterspacing-small
       );
     }
   }
@@ -469,17 +464,17 @@ html {
     align-self: flex-start;
     @include font(
       $font-size-pbig,
-      $font-weight-pbig,
-      $font-lineheight-pbig,
-      $font-letterspacing-pbig
+      $font-weight-bold,
+      $font-lineheight-l,
+      normal
     );
 
     @include mobile {
       @include font(
         $font-size-pbig-mobile,
-        $font-weight-pbig-mobile,
-        $font-lineheight-pbig-mobile,
-        $font-letterspacing-pbig-mobile
+        $font-weight-bold,
+        $font-lineheight-xxl,
+        normal
       );
     }
 
@@ -555,9 +550,9 @@ html {
   text-align: center;
   @include font(
     $font-size-pnormal,
-    $font-weight-pnormal,
-    $font-lineheight-pnormal,
-    $font-letterspacing-pnormal
+    $font-weight-regular,
+    $font-lineheight-xxl,
+    normal
   );
 
   @include mobile {
@@ -565,9 +560,9 @@ html {
     margin-bottom: 50px;
     @include font(
       $font-size-pnormal-mobile,
-      $font-weight-pnormal-mobile,
-      $font-lineheight-pnormal-mobile,
-      $font-letterspacing-pnormal-mobile
+      $font-weight-regular,
+      $font-lineheight-xxl,
+      normal
     );
   }
 }
@@ -624,17 +619,17 @@ html {
     color: $clr-black;
     @include font(
       $font-size-pnormal,
-      $font-weight-pnormal,
-      $font-lineheight-pnormal,
-      $font-letterspacing-pnormal
+      $font-weight-regular,
+      $font-lineheight-xxl,
+      normal
     );
 
     @include mobile {
       @include font(
         $font-size-pnormal-mobile,
-        $font-weight-pnormal-mobile,
-        $font-lineheight-pnormal-mobile,
-        $font-letterspacing-pnormal-mobile
+        $font-weight-regular,
+        $font-lineheight-xxl,
+        normal
       );
     }
   }
@@ -650,9 +645,9 @@ html {
 
     @include font(
       $font-size-pnormal,
-      $font-weight-pnormal,
-      $font-lineheight-pnormal,
-      $font-letterspacing-pnormal
+      $font-weight-regular,
+      $font-lineheight-xxl,
+      normal
     );
 
     @include mobile {
@@ -660,9 +655,9 @@ html {
       height: 43px;
       @include font(
         $font-size-pnormal-mobile,
-        $font-weight-pnormal-mobile,
-        $font-lineheight-pnormal-mobile,
-        $font-letterspacing-pnormal-mobile
+        $font-weight-regular,
+        $font-lineheight-xxl,
+        normal
       );
     }
 
@@ -677,17 +672,17 @@ html {
       color: $clr-gray300;
       @include font(
         $font-size-pnormal,
-        $font-weight-pnormal,
-        $font-lineheight-pnormal,
-        $font-letterspacing-pnormal
+        $font-weight-regular,
+        $font-lineheight-xxl,
+        normal
       );
 
       @include mobile {
         @include font(
           $font-size-pnormal-mobile,
-          $font-weight-pnormal-mobile,
-          $font-lineheight-pnormal-mobile,
-          $font-letterspacing-pnormal-mobile
+          $font-weight-regular,
+          $font-lineheight-xxl,
+          normal
         );
       }
     }
@@ -753,24 +748,24 @@ html {
     @include desktop {
       @include font(
         $font-size-psmall,
-        $font-weight-psmall,
-        $font-lineheight-psmall,
-        $font-letterspacing-psmall
+        $font-weight-regular,
+        $font-lineheight-xxl,
+        $font-letterspacing-small
       );
     }
     @include tablet {
       @include font(
         $font-size-psmall,
-        $font-weight-psmall,
-        $font-lineheight-psmall,
-        $font-letterspacing-psmall
+        $font-weight-regular,
+        $font-lineheight-xxl,
+        $font-letterspacing-small
       );
     }
     @include mobile {
       @include font(
         $font-size-psmall-mobile,
-        $font-weight-psmall-mobile,
-        $font-lineheight-psmall-mobile,
+        $font-weight-regular,
+        $font-lineheight-xxl,
         normal
       );
     }
@@ -922,18 +917,18 @@ html {
   outline: none;
   @include font(
     $font-size-pnormal,
-    $font-weight-pnormal,
-    $font-lineheight-pnormal,
-    $font-letterspacing-pnormal
+    $font-weight-regular,
+    $font-lineheight-xxl,
+    normal
   );
 
   @include mobile {
     padding: 12px 0;
     @include font(
       $font-size-pnormal-mobile,
-      $font-weight-pnormal-mobile,
-      $font-lineheight-pnormal-mobile,
-      $font-letterspacing-pnormal-mobile
+      $font-weight-regular,
+      $font-lineheight-xxl,
+      normal
     );
   }
 
@@ -1023,17 +1018,17 @@ html {
     color: $clr-black;
     @include font(
       $font-size-pbig,
-      $font-weight-pbig,
-      $font-lineheight-pbig,
-      $font-letterspacing-pbig
+      $font-weight-bold,
+      $font-lineheight-l,
+      normal
     );
 
     @include mobile {
       @include font(
         $font-size-pbig-mobile,
-        $font-weight-pbig-mobile,
-        $font-lineheight-pbig-mobile,
-        $font-letterspacing-pbig-mobile
+        $font-weight-bold,
+        $font-lineheight-xxl,
+        normal
       );
     }
   }
@@ -1054,17 +1049,17 @@ html {
     color: $clr-black;
     @include font(
       $font-size-h3,
-      $font-weight-h3,
-      $font-lineheight-h3,
-      $font-letterspacing-h3
+      $font-weight-medium,
+      $font-lineheight-l,
+      normal
     );
 
     @include mobile {
       @include font(
         $font-size-h3-mobile,
-        $font-weight-h3-mobile,
-        $font-lineheight-h3-mobile,
-        $font-letterspacing-h3-mobile
+        $font-weight-bold,
+        $font-lineheight-m,
+        $font-letterspacing-large
       );
     }
   }
@@ -1072,17 +1067,17 @@ html {
     color: $clr-gray300;
     @include font(
       $font-size-psmall,
-      $font-weight-psmall,
-      $font-lineheight-psmall,
-      $font-letterspacing-psmall
+      $font-weight-regular,
+      $font-lineheight-xxl,
+      $font-letterspacing-small
     );
 
     @include mobile {
       @include font(
         $font-size-psmall-mobile,
-        $font-weight-psmall-mobile,
-        $font-lineheight-psmall-mobile,
-        $font-letterspacing-psmall-mobile
+        $font-weight-regular,
+        $font-lineheight-xxl,
+        $font-letterspacing-small
       );
     }
   }
@@ -1257,18 +1252,18 @@ html {
   &__name {
     @include font(
       $font-size-h3,
-      $font-weight-h3,
-      $font-lineheight-h3,
-      $font-letterspacing-h3
+      $font-weight-medium,
+      $font-lineheight-l,
+      normal
     );
 
     @include mobile {
       width: 140px;
       @include font(
         $font-size-h3-mobile,
-        $font-weight-h3-mobile,
-        $font-lineheight-h3-mobile,
-        $font-letterspacing-h3-mobile
+        $font-weight-bold,
+        $font-lineheight-m,
+        $font-letterspacing-large
       );
     }
   }
@@ -1278,18 +1273,18 @@ html {
   width: 554px;
   @include font(
     $font-size-pnormal,
-    $font-weight-pnormal,
-    $font-lineheight-pnormal,
-    $font-letterspacing-pnormal
+    $font-weight-regular,
+    $font-lineheight-xxl,
+    normal
   );
 
   @include mobile {
     width: 263px;
     @include font(
       $font-size-pnormal-mobile,
-      $font-weight-pnormal-mobile,
-      $font-lineheight-pnormal-mobile,
-      $font-letterspacing-pnormal-mobile
+      $font-weight-regular,
+      $font-lineheight-xxl,
+      normal
     );
   }
   &__ul {
@@ -1302,9 +1297,9 @@ html {
       margin: 0 0 0 9px;
       @include font(
         $font-size-pnormal-mobile,
-        $font-weight-pnormal-mobile,
-        $font-lineheight-pnormal-mobile,
-        $font-letterspacing-pnormal-mobile
+        $font-weight-regular,
+        $font-lineheight-xxl,
+        normal
       );
     }
   }
@@ -1341,9 +1336,9 @@ html {
     color: $clr-white;
     @include font(
       $font-size-pnormal,
-      $font-weight-pnormal,
-      $font-lineheight-pnormal,
-      $font-letterspacing-pnormal
+      $font-weight-regular,
+      $font-lineheight-xxl,
+      normal
     );
 
     &:active {
@@ -1357,17 +1352,17 @@ html {
     color: $clr-white;
     @include font(
       $font-size-pbig,
-      $font-weight-pbig,
-      $font-lineheight-pbig,
-      $font-letterspacing-pbig
+      $font-weight-bold,
+      $font-lineheight-l,
+      normal
     );
 
     @include mobile {
       @include font(
         $font-size-pbig-mobile,
-        $font-weight-pbig-mobile,
-        $font-lineheight-pbig-mobile,
-        $font-letterspacing-pbig-mobile
+        $font-weight-bold,
+        $font-lineheight-xxl,
+        normal
       );
     }
   }
@@ -1431,21 +1426,16 @@ html {
 
 .ending__header {
   color: $clr-black;
-  @include font(
-    $font-size-h3,
-    $font-weight-h3,
-    $font-lineheight-h3,
-    $font-letterspacing-h3
-  );
+  @include font($font-size-h3, $font-weight-medium, $font-lineheight-l, normal);
 
   @include mobile {
     width: 291px;
     text-align: center;
     @include font(
       $font-size-h3-mobile,
-      $font-weight-h3-mobile,
-      $font-lineheight-h3-mobile,
-      $font-letterspacing-h3-mobile
+      $font-weight-bold,
+      $font-lineheight-m,
+      $font-letterspacing-large
     );
   }
 }
@@ -1454,18 +1444,18 @@ html {
   color: $clr-gray300;
   @include font(
     $font-size-pnormal,
-    $font-weight-pnormal,
-    $font-lineheight-pnormal,
-    $font-letterspacing-pnormal
+    $font-weight-regular,
+    $font-lineheight-xxl,
+    normal
   );
 
   @include mobile {
     text-align: center;
     @include font(
       $font-size-pnormal-mobile,
-      $font-weight-pnormal-mobile,
-      $font-lineheight-pnormal-mobile,
-      $font-letterspacing-pnormal-mobile
+      $font-weight-regular,
+      $font-lineheight-xxl,
+      normal
     );
   }
 }
@@ -1516,17 +1506,17 @@ html {
   color: $clr-gray300;
   @include font(
     $font-size-pnormal,
-    $font-weight-pnormal,
-    $font-lineheight-pnormal,
-    $font-letterspacing-pnormal
+    $font-weight-regular,
+    $font-lineheight-xxl,
+    normal
   );
 
   @include mobile {
     @include font(
       $font-size-pnormal-mobile,
-      $font-weight-pnormal-mobile,
-      $font-lineheight-pnormal-mobile,
-      $font-letterspacing-pnormal-mobile
+      $font-weight-regular,
+      $font-lineheight-xxl,
+      normal
     );
   }
 }
@@ -1595,17 +1585,17 @@ html {
   color: $clr-black;
   @include font(
     $font-size-pnormal,
-    $font-weight-pnormal,
-    $font-lineheight-pnormal,
-    $font-letterspacing-pnormal
+    $font-weight-regular,
+    $font-lineheight-xxl,
+    normal
   );
 
   @include mobile {
     @include font(
       $font-size-pnormal-mobile,
-      $font-weight-pnormal-mobile,
-      $font-lineheight-pnormal-mobile,
-      $font-letterspacing-pnormal-mobile
+      $font-weight-regular,
+      $font-lineheight-xxl,
+      normal
     );
   }
 }

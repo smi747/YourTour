@@ -346,6 +346,7 @@ html {
     border: none;
     outline: none;
     background: transparent;
+    padding: 0;
     @include font(
       $font-size-pbig,
       $font-weight-bold,
@@ -361,15 +362,25 @@ html {
         normal
       );
     }
+    &:hover {
+      text-decoration: underline 2px;
+      text-underline-offset: 10px;
 
+      @include mobile {
+        text-underline-offset: 3px;
+      }
+    }
     &:active {
       text-decoration-color: currentColor;
       color: $clr-orange200;
     }
     &_active {
-      text-decoration: underline 1px;
-      text-underline-offset: 6px;
+      text-decoration: underline 2px;
+      text-underline-offset: 10px;
       color: $clr-orange200;
+      @include mobile {
+        text-underline-offset: 3px;
+      }
     }
   }
 }

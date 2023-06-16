@@ -219,7 +219,7 @@ html {
     @include tablet {
       gap: 30px;
     }
-    @include mobile {
+    @media (max-width: 1023px) {
       display: none;
     }
   }
@@ -296,7 +296,7 @@ html {
 }
 
 .body__tours {
-  padding-top: $tours-toppadding;
+  padding: $tours-toppadding $tours-sidepadding 0;
   @include mobile {
     padding: $tours-toppadding-mobile $tours-sidepadding-mobile 0;
   }
@@ -321,7 +321,6 @@ html {
       gap: 30px;
     }
     @include tablet {
-      width: 918px;
       gap: 18px;
     }
     @include mobile {
@@ -965,7 +964,7 @@ html {
 }
 
 .body__feedback {
-  padding-top: $feedback-toppadding;
+  padding: $feedback-toppadding $feedback-sidepadding 0;
 
   @include mobile {
     padding: $feedback-toppadding-mobile $feedback-sidepadding-mobile 0;
@@ -983,8 +982,9 @@ html {
       gap: 30px;
     }
     @include tablet {
-      width: 918px;
       gap: 18px;
+      flex-wrap: wrap;
+      justify-content: center;
     }
     @include mobile {
       flex-wrap: wrap;
@@ -996,7 +996,7 @@ html {
 
 .feedback-element {
   display: flex;
-  flex-basis: 50%;
+  width: 570px;
   justify-content: space-between;
   flex-direction: column;
   background: $clr-beige200;
@@ -1005,12 +1005,14 @@ html {
   border-radius: 50px;
   gap: 70px;
 
+  @include tablet {
+    width: 450px;
+  }
   @include mobile {
     padding: 20px;
     border-radius: 20px;
     gap: 40px;
-    max-width: 318px;
-    min-width: 318px;
+    width: 318px;
   }
 
   &__text {
@@ -1184,7 +1186,7 @@ html {
       gap: 50px;
     }
     @include tablet {
-      width: 918px;
+      max-width: 918px;
       gap: 50px;
     }
     @include mobile {
@@ -1201,7 +1203,7 @@ html {
   height: 567px;
 
   @include tablet {
-    width: 918px;
+    width: 100%;
   }
   @include mobile {
     width: 318px;

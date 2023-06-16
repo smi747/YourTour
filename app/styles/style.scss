@@ -291,6 +291,13 @@ html {
       $font-letterspacing-h2-mobile
     );
   }
+  &_type_1 {
+    margin-bottom: 30px;
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .body__tours {
@@ -537,38 +544,6 @@ html {
 
 .form {
   @include flex(column, center, null);
-
-  &__title {
-    margin-bottom: 30px;
-
-    @include mobile {
-      margin-bottom: 20px;
-    }
-  }
-}
-
-.stories__title {
-  margin-bottom: 30px;
-
-  @include mobile {
-    margin-bottom: 20px;
-  }
-}
-
-.feedback__title {
-  margin-bottom: 30px;
-
-  @include mobile {
-    margin-bottom: 20px;
-  }
-}
-
-.photos__title {
-  margin-bottom: 30px;
-
-  @include mobile {
-    margin-bottom: 20px;
-  }
 }
 
 .desc {

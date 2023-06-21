@@ -24,25 +24,11 @@ html {
   scroll-behavior: smooth;
 }
 
-.body {
-  font-family: $primary-font-family;
-  font-style: $primary-font-style;
-  color: $clr-white;
-  background-color: $clr-beige100;
-  min-width: 360px;
-}
+@import "blocks/body";
 
 /*Убрать полосу прокрутки для всей страницы*/
 ::-webkit-scrollbar {
   width: 0;
-}
-
-.body__header {
-  padding: 0 $header-sidepadding;
-
-  @include mobile {
-    padding: 0 $header-sidepadding-mobile;
-  }
 }
 
 .header {
@@ -295,13 +281,6 @@ html {
   }
 }
 
-.body__tours {
-  padding: $tours-toppadding $tours-sidepadding 0;
-  @include mobile {
-    padding: $tours-toppadding-mobile $tours-sidepadding-mobile 0;
-  }
-}
-
 .tours {
   @include flex(column, center, null);
 
@@ -537,14 +516,6 @@ html {
       border-radius: 20px;
     }
     pointer-events: none;
-  }
-}
-
-.body__form {
-  padding: $form-toppadding $form-sidepadding 0;
-
-  @include mobile {
-    padding: $form-toppadding-mobile $form-sidepadding-mobile 0;
   }
 }
 
@@ -973,14 +944,6 @@ html {
   }
 }
 
-.body__feedback {
-  padding: $feedback-toppadding $feedback-sidepadding 0;
-
-  @include mobile {
-    padding: $feedback-toppadding-mobile $feedback-sidepadding-mobile 0;
-  }
-}
-
 .feedback {
   @include flex(column, center, null);
 
@@ -1095,18 +1058,6 @@ html {
   }
   &__picture {
     border-radius: 100px;
-  }
-}
-
-.body__unifiedblock {
-  padding: $unifiedblock-toppadding $unifiedblock-sidepadding 0;
-
-  @include tablet {
-    padding: $unifiedblock-toppadding-tablet $unifiedblock-sidepadding-tablet 0;
-  }
-
-  @include mobile {
-    padding: $unifiedblock-toppadding-mobile $unifiedblock-sidepadding-mobile 0;
   }
 }
 
@@ -1484,16 +1435,6 @@ html {
   &:active {
     color: $clr-green400;
     text-decoration-color: currentColor;
-  }
-}
-
-.body__footer {
-  margin-top: $footer-topmargin;
-  padding: 30px $form-sidepadding;
-
-  @include mobile {
-    padding: 21px 0;
-    margin-top: $footer-topmargin-mobile;
   }
 }
 

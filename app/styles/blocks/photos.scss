@@ -78,6 +78,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
+    min-width: 100%;
+    min-height: 100%;
+
     // &_small {
     //   width: 443px;
     // }
@@ -88,26 +91,57 @@
     &_mod-1 {
       width: 501px;
       height: 302px;
+
+      @include tablet {
+        width: 356px;
+      }
     }
     &_mod-2 {
       width: 443px;
       height: unset;
+
+      @include tablet {
+        width: 315px;
+      }
     }
     &_mod-3 {
-      width: 499px;
-      height: 302px;
+      width: 443px;
+      height: unset;
+
+      @include tablet {
+        width: 390px;
+      }
     }
     &_mod-4 {
-      width: 348px;
-      height: unset;
+      width: 499px;
+      height: 302px;
+
+      @include tablet {
+        width: 355px;
+      }
     }
     &_mod-5 {
+      width: 348px;
+      height: unset;
+
+      @include tablet {
+        width: 231px;
+      }
+    }
+    &_mod-6 {
       object-position: 0 -160px;
       width: 348px;
       height: 602px;
       top: 100%;
+
+      @include tablet {
+        object-position: unset;
+        width: 231px;
+        height: unset;
+        top: 50%;
+      }
     }
-    &_mod-6 {
+    &_mod-7 {
       object-position: 0 -288px;
       width: 443px;
       height: 602px;

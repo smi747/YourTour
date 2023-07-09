@@ -3,6 +3,8 @@
 
   &__list {
     display: grid;
+    width: 100%;
+    height: 301px;
 
     gap: 30px;
     margin-bottom: 30px;
@@ -46,10 +48,8 @@
     }
   }
   &__card {
-    object-fit: cover;
-    max-width: 100%;
-
-    height: 301px;
+    position: relative;
+    overflow: hidden;
     border-radius: 50px;
 
     @include mobile {
@@ -68,6 +68,50 @@
       @include mobile {
         display: none;
       }
+    }
+  }
+  &__img {
+    position: absolute;
+
+    height: 301px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    // &_small {
+    //   width: 443px;
+    // }
+    // &_big {
+    //   width: 348px;
+    // }
+
+    &_mod-1 {
+      width: 501px;
+      height: 302px;
+    }
+    &_mod-2 {
+      width: 443px;
+      height: unset;
+    }
+    &_mod-3 {
+      width: 499px;
+      height: 302px;
+    }
+    &_mod-4 {
+      width: 348px;
+      height: unset;
+    }
+    &_mod-5 {
+      object-position: 0 -160px;
+      width: 348px;
+      height: 602px;
+      top: 100%;
+    }
+    &_mod-6 {
+      object-position: 0 -288px;
+      width: 443px;
+      height: 602px;
+      top: 100%;
     }
   }
 }

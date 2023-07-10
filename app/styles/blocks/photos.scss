@@ -17,6 +17,7 @@
       gap: 10px;
       margin-bottom: 18px;
       max-width: 318px;
+      height: 110px;
     }
     &:last-child {
       margin-bottom: 0;
@@ -81,6 +82,10 @@
     min-width: 100%;
     min-height: 100%;
 
+    @include mobile {
+      height: 110px;
+    }
+
     // &_small {
     //   width: 443px;
     // }
@@ -94,6 +99,10 @@
 
       @include tablet {
         width: 356px;
+      }
+      @include mobile {
+        width: 170px;
+        height: 111px;
       }
     }
     &_mod-2 {
@@ -111,6 +120,9 @@
       @include tablet {
         width: 390px;
       }
+      @include mobile {
+        width: 110px;
+      }
     }
     &_mod-4 {
       width: 499px;
@@ -119,6 +131,10 @@
       @include tablet {
         width: 355px;
       }
+      @include mobile {
+        width: 169px;
+        height: 111px;
+      }
     }
     &_mod-5 {
       width: 348px;
@@ -126,6 +142,9 @@
 
       @include tablet {
         width: 231px;
+      }
+      @include mobile {
+        width: 100px;
       }
     }
     &_mod-6 {
@@ -137,6 +156,12 @@
       @include tablet {
         object-position: unset;
         width: 231px;
+        height: unset;
+        top: 50%;
+      }
+      @include mobile {
+        object-position: unset;
+        width: 100px;
         height: unset;
         top: 50%;
       }

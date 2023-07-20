@@ -25,7 +25,7 @@
 
     @include mobile {
       @include font(
-        $font-size-pnormal-mobile,
+        $font-size-p-mobile,
         $font-weight-regular,
         $font-lineheight-xxl,
         normal
@@ -53,7 +53,7 @@
       padding: 9px;
       height: 43px;
       @include font(
-        $font-size-pnormal-mobile,
+        $font-size-p-mobile,
         $font-weight-regular,
         $font-lineheight-xxl,
         normal
@@ -78,7 +78,7 @@
 
       @include mobile {
         @include font(
-          $font-size-pnormal-mobile,
+          $font-size-p-mobile,
           $font-weight-regular,
           $font-lineheight-xxl,
           normal
@@ -166,7 +166,7 @@
     }
     @include mobile {
       @include font(
-        $font-size-psmall-mobile,
+        $font-size-p-mobile,
         $font-weight-regular,
         $font-lineheight-xxl,
         normal

@@ -43,7 +43,7 @@
       width: 291px;
       text-align: center;
       @include font(
-        $font-size-h3-mobile,
+        $font-size-pbig,
         $font-weight-bold,
         $font-lineheight-m,
         $font-letterspacing-large
@@ -62,7 +62,7 @@
     @include mobile {
       text-align: center;
       @include font(
-        $font-size-pnormal-mobile,
+        $font-size-p-mobile,
         $font-weight-regular,
         $font-lineheight-xxl,
         normal

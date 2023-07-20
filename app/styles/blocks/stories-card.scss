@@ -66,7 +66,7 @@
     @include mobile {
       width: 140px;
       @include font(
-        $font-size-h3-mobile,
+        $font-size-pbig,
         $font-weight-bold,
         $font-lineheight-m,
         $font-letterspacing-large

@@ -10,7 +10,7 @@
   @include mobile {
     width: 263px;
     @include font(
-      $font-size-pnormal-mobile,
+      $font-size-p-mobile,
       $font-weight-regular,
       $font-lineheight-xxl,
       normal
@@ -25,7 +25,7 @@
     @include mobile {
       margin: 0 0 0 9px;
       @include font(
-        $font-size-pnormal-mobile,
+        $font-size-p-mobile,
         $font-weight-regular,
         $font-lineheight-xxl,
         normal

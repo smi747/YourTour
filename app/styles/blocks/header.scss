@@ -62,7 +62,7 @@
       width: 360px;
       margin-bottom: 40px;
       @include font(
-        $font-size-h1-mobile,
+        $font-size-h1-2-mobile,
         $font-weight-bold,
         $font-lineheight-s,
         $font-letterspacing-medium
@@ -87,7 +87,7 @@
       width: 310px;
       margin-bottom: 40px;
       @include font(
-        $font-size-pnormal-mobile,
+        $font-size-p-mobile,
         $font-weight-regular,
         $font-lineheight-xxl,
         normal
@@ -108,7 +108,7 @@
 
     @include mobile {
       @include font(
-        $font-size-psmall-mobile,
+        $font-size-p-mobile,
         $font-weight-regular,
         $font-lineheight-xxl,
         $font-letterspacing-small

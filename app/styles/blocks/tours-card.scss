@@ -56,7 +56,7 @@
 
     @include mobile {
       @include font(
-        $font-size-h3-mobile,
+        $font-size-pbig,
         $font-weight-bold,
         $font-lineheight-m,
         0.04em
@@ -75,7 +75,7 @@
     @include mobile {
       margin-top: 13px;
       @include font(
-        $font-size-psmall-mobile,
+        $font-size-p-mobile,
         $font-weight-regular,
         $font-lineheight-xxl,
         $font-letterspacing-small
@@ -96,7 +96,7 @@
 
     @include mobile {
       @include font(
-        $font-size-pbig-mobile,
+        $font-size-p-mobile,
         $font-weight-bold,
         $font-lineheight-xxl,
         normal

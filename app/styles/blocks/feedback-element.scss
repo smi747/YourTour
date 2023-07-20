@@ -31,7 +31,7 @@
 
     @include mobile {
       @include font(
-        $font-size-pbig-mobile,
+        $font-size-p-mobile,
         $font-weight-bold,
         $font-lineheight-xxl,
         normal
@@ -62,7 +62,7 @@
 
     @include mobile {
       @include font(
-        $font-size-h3-mobile,
+        $font-size-pbig,
         $font-weight-bold,
         $font-lineheight-m,
         $font-letterspacing-large
@@ -80,7 +80,7 @@
 
     @include mobile {
       @include font(
-        $font-size-psmall-mobile,
+        $font-size-p-mobile,
         $font-weight-regular,
         $font-lineheight-xxl,
         $font-letterspacing-small

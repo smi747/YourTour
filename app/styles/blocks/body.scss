@@ -1,9 +1,10 @@
 .body {
+  min-width: 360px;
+
+  background-color: $clr-beige100;
+  color: $clr-white;
   font-family: $primary-font-family;
   font-style: $primary-font-style;
-  color: $clr-white;
-  background-color: $clr-beige100;
-  min-width: 360px;
 
   &__header {
     padding: 0 $header-sidepadding;
@@ -14,6 +15,7 @@
   }
   &__tours {
     padding: $unifiedblock-toppadding $blocktype_1-sidepadding 0;
+
     @include mobile {
       padding: $unifiedblock-toppadding-mobile $unifiedblock-sidepadding-mobile
         0;
@@ -52,8 +54,8 @@
     padding: 30px $blocktype_1-sidepadding;
 
     @include mobile {
-      padding: 21px 0;
       margin-top: $unifiedblock-toppadding-mobile;
+      padding: 21px 0;
     }
   }
 }

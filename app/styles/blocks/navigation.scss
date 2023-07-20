@@ -1,8 +1,9 @@
 .navigation {
-  @include flex(null, center, space-between);
-
   width: 100%;
   height: 88px;
+
+  @include flex(null, center, space-between);
+
   @include font(
     $font-size-pnormal,
     $font-weight-regular,
@@ -18,6 +19,7 @@
   }
   @include mobile {
     margin-bottom: 52px;
+
     @include font(
       $font-size-p-mobile,
       $font-weight-regular,

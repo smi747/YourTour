@@ -4,6 +4,7 @@
 
   color: $clr-gray300;
   text-align: center;
+
   @include font(
     $font-size-pnormal,
     $font-weight-regular,
@@ -14,6 +15,7 @@
   @include mobile {
     width: 318px;
     margin-bottom: 50px;
+
     @include font(
       $font-size-p-mobile,
       $font-weight-regular,

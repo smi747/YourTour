@@ -1,27 +1,32 @@
 .feedback-element {
-  display: flex;
   width: 570px;
+  padding: 37px 40px;
+
+  display: flex;
   justify-content: space-between;
   flex-direction: column;
-  background: $clr-beige200;
-
-  padding: 37px 40px;
-  border-radius: 50px;
   gap: 70px;
+
+  background: $clr-beige200;
+  border-radius: 50px;
 
   @include tablet {
     width: 450px;
   }
+
   @include mobile {
-    padding: 22px 20px;
-    border-radius: 20px;
-    gap: 40px;
     width: 318px;
+    padding: 22px 20px;
+
+    gap: 40px;
+
+    border-radius: 20px;
   }
 
   &__text {
     font-style: normal;
     color: $clr-black;
+
     @include font(
       $font-size-pbig,
       $font-weight-bold,
@@ -53,6 +58,7 @@
   }
   &__author {
     color: $clr-black;
+
     @include font(
       $font-size-h3,
       $font-weight-medium,
